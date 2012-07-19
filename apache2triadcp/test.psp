@@ -1,0 +1,44 @@
+<%
+req.add_common_vars()
+%>
+<html>
+<link rel=stylesheet href=style.css>
+<center>
+<span class=span0><span class=span1>
+
+<b><%= 'Python PSP is working fine' %></b>
+
+<br><br>
+<b>server software : </b><%= req.subprocess_env['SERVER_SOFTWARE'] %>
+<br><br>
+<b>client software : </b><%= req.subprocess_env["HTTP_USER_AGENT"] %>
+<br><br>
+<b>http referer : </b><%= req.subprocess_env['HTTP_REFERER'] %>
+<br><br>
+<b>opened file : </b><%= req.subprocess_env['SCRIPT_FILENAME'] %>
+<br><br>
+<b>server adress :</b><%= req.subprocess_env['HTTP_HOST'] %>
+<br><br>
+<b>your adress : </b><%= req.subprocess_env['REMOTE_ADDR'] %>
+</span></span>
+<br>
+
+<table width=88% class=table border=0 cellpadding=4 cellspacing=1>
+<tr><td class=tdark ><b>Server Variable</b></td><td class=tdg ><b>Value</b></td></tr>
+
+<%
+keys = dict(req.subprocess_env)
+for i in keys:
+   # begin
+%>
+
+<tr><td class=tdd><font size=-1><%= i %></font></td>
+<td class=tdl><font size=-1><%= keys[i] %>&nbsp;</font></td></tr>
+
+<%
+# end
+%>
+
+</table></p></font>
+
+</center>Written by Vlad Alexa Mancini</html>

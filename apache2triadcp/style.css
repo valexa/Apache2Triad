@@ -1,0 +1,216 @@
+body { 
+	scrollbar-base-color: #efefef; 
+	scrollbar-face-color: #F3F3F3; 
+	scrollbar-track-color: #FFFFFF; 
+	scrollbar-arrow-color: #666666;
+	scrollbar-highlight-color: #FFFFFF; 
+	scrollbar-3dlight-color: #DDDDDD; 
+	scrollbar-shadow-color: #777777;
+	scrollbar-darkshadow-color: #FFFFFF;
+	margin: 5px 0px 0px 5px;
+	font-family: Times New Roman, Times, serif;
+}
+.logo{
+	background-color: #f5f5f5;
+	border-bottom:	#CCCCCC 1px solid;
+}
+a:link {
+    color: #0073c7;
+    background-color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #6C95BD;
+    background-color: inherit;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #000000;
+    text-decoration: none;
+    background-color: inherit;
+}
+.tdl {
+	background:#F0F0F0;
+}
+.tdd {
+	background:#E0E0E0;
+}
+.tdg {
+	background:#E4E4E4;
+}
+.tdark {
+	background:#CCCCCC;
+}
+.tblank {
+	background:#fbfbfb;
+
+}
+.table {
+	background:#757575;
+}
+.tab {
+	border-left:	#CCCCCC 1px solid;
+	border-right:	#CCCCCC 1px solid;
+	border-bottom:	#CCCCCC 1px solid;	
+	border-spacing: 10px;	
+}
+.button {
+	border : 2px; 
+	color: #555555;
+	font-weight: bold;
+	background-color: #DDDDDD;
+	text-align: center;
+	border-left:	#BBBBBB 1px solid;
+	border-top:	#BBBBBB 1px solid;
+	border-right:	#BBBBBB 1px solid;
+	border-bottom:	#BBBBBB 1px solid;
+}
+.input {
+	border : 2px; 
+	background-color: #DDDDDD;
+	border-left:	#BBBBBB 1px solid;
+	border-top:	#BBBBBB 1px solid;
+	border-right:	#BBBBBB 1px solid;
+	border-bottom:	#BBBBBB 1px solid;
+}
+fieldset {
+	color: #666666;
+	font-weight: bold;
+	border : 2px; 
+	border-left:	#BBBBBB 1px solid;
+	border-top:	#BBBBBB 1px solid;
+	border-right:	#BBBBBB 1px solid;
+	border-bottom:	#BBBBBB 1px solid;
+}
+.form {
+	border : 0px;
+	border-spacing: 0px;
+	margin: 0px 0px 0px 0px;
+	display:inline
+}
+.submit {
+	border : 2px; 
+	border-style : groove;
+	border-color : #FFFFFF;
+	font-weight: bold;
+	background-color: #D0D0D0;
+}
+.span0 { 
+	filter: DropShadow(color=#b0b0b0,offx=4,offy=4,positive=1,enabled=1);
+	width:100%;
+	padding:10px;
+}
+.span1 {
+	width: 90%;
+	border:1px dashed #b0b0b0;
+	background: #F7F7F7;
+	padding:10px;
+}
+.row1{
+	background:#f5f5f5
+}
+.row2,.helpline{
+	background:#ececec
+}
+.row3{
+	background:#e3e3e3
+}
+.head0 {
+	background:#CCCCCC;
+}
+.title {
+	color: #999999;
+	font-weight: bold ;
+	font-size: 16px ;
+	background-color: #EFEFEF;
+	text-align: center;
+}
+.head1 {
+	color: #FFFFFF;
+	font-weight:bold;
+	background:#E89C28;
+	border:1px solid #B08810;
+	height:25px;
+}
+.head2 {
+	color: #FFFFFF;
+	font-weight:bold;
+	background:#DE5100;
+	border:1px solid #944508;
+	height:25px;
+}
+.head3 {
+	color: #FFFFFF;
+	font-weight:bold;
+	background:#A50000;
+	border:1px solid #632421;
+	height:25px;
+}
+.head4 {
+	color: #FFFFFF;
+	font-weight:bold;
+	background:#0075EF;
+	border:1px solid #509400;
+	height:25px;
+}
+.head5 {
+	color: #FFFFFF;
+	font-weight:bold;
+	background:#384C10;
+	border:1px solid #509400;
+	height:25px;
+}
+
+.scrn{width:100%;text-align:center}
+.tt12bkg{background:url(gfx/tt12_m.gif) repeat-x;height:12px;width:100%}
+.tb12bkg{background:url(gfx/tb12_m.gif) repeat-x;height:12px;width:100%}
+.index1 {
+	height: 16px;
+	BACKGROUND-COLOR: #f1f1f1; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	FONT-SIZE: 10px;
+}
+.index2 {
+	height: 16px;
+	BACKGROUND-COLOR: #f5f5f5; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	FONT-SIZE: 10px;
+}
+.index3 {
+	height: 16px;
+	BACKGROUND-COLOR: #f5f5f5; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	FONT-SIZE: 8px;
+}
+.indexbold {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 10px; FONT-WEIGHT: bold
+}
+.bodyline{
+	background:#fbfbfb;
+	border:1px solid #666666;
+}
+.forumline{
+	background:#FFFFFF;border:1px solid #666666;
+}
+fieldset{
+	display:inline;
+	font-family: Verdana, sans-serif;
+	font-weight: bold ;
+	font-size: 11px ;
+}
+table{
+	font-size: 14px ;
+}
+textarea{
+	font-family: Verdana, sans-serif;
+	font-size: 10px ;	
+}
+.desc{
+	color: #999999;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold ;
+	font-size: 12px ;
+}

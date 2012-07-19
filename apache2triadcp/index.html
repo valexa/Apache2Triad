@@ -1,0 +1,476 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>Apache2TriadCP</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="SHORTCUT ICON" href="favicon.ico">
+</head>
+<body background="gfx/lines.gif">
+
+<TABLE width="99%" border=0 cellPadding=0 cellSpacing=0 class=ttb>
+  <TBODY>
+    <TR>
+      <TD><IMG height=12 src="gfx/tt12_l.gif"
+      width=10></TD>
+      <TD class=tt12bkg><IMG height=12
+      src="gfx/spacer.gif" width=200></TD>
+      <TD><IMG height=12 src="gfx/tt12_r.gif"
+      width=10></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<TABLE width="99%" border=0 cellPadding=10 cellSpacing=0 class=bodyline>
+  <TBODY>
+    <TR>
+      <TD class="logo"><div align="center"><a href="http://apache2triad.net" target="_blank"><img src="gfx/apache2triadcp_logo.gif" width="352" height="40" border="0"></a></div></TD>
+    </TR>
+     <TR>
+      <TD width="995"> <br>
+        <TABLE width="100%" border=0 cellPadding=5 cellSpacing=0>
+          <TBODY>
+            <TR vAlign=top>
+              <TD align=left width=35%> 
+                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="12" align="center" valign="top"><img src="gfx/t_l.gif" width="10" height="12"></td>
+                    <td width="100%" height="12" background="gfx/t_t.gif"></td>
+                    <td width="12" align="center" valign="top"><img src="gfx/t_r.gif" width="10" height="12"></td>
+                  </tr>
+                </table>
+                <table width="100%" border="0" cellspacing="1" cellpadding="0" class="head0">
+                  <tr>
+                    <td class="title"><a name="stat" id="stat"></a> Status <a href="help.html#Status">?</a></td>
+                  </tr>
+                  <tr>
+                    <td><TABLE width=100% border=0 cellPadding=1 cellSpacing=1 bgcolor="#FFFFFF">
+                        <TBODY>
+                          <TR>
+                            <TD class=index1 noWrap width=40%>Server running</TD>
+                            <TD width="60%" class=index2>
+                              <!--#echo var="SERVER_SOFTWARE" -->
+                      </TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap width=100>Server bound on</TD>
+                            <TD class=index2>
+                              <!--#echo var="SERVER_ADDR" -->
+                               : 
+                              <!--#if expr="$SERVER_PORT = 80"  -->
+                              <!--#echo var="SERVER_PORT" -->
+                              <!--#else -->
+                              <!--#echo var="SERVER_PORT" -->
+                        <img src=gfx/ico_notice.gif width="16" height="16" align=absmiddle title="Since your server is not running on the standard port clients will have to specify server:port in browser"> 
+                              <!--#endif -->
+                      </TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap width=100>Server admin addr</TD>
+                            <TD class=index2>
+                              <!--#if expr="$SERVER_ADMIN = admin@localhost"  -->
+                              <!--#echo var="SERVER_ADMIN" -->
+                        <img src=gfx/ico_warn.gif align=absmiddle title="admin@localhost is the default but not a RFC822 compliant address, change the domain using the cp script from localhost to your FQDN shall you want email functionality">
+                              <!--#else -->
+                              <!--#echo var="SERVER_ADMIN" -->
+                              <!--#endif -->
+                      </TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap width=100>Server webroot</TD>
+                            <TD class=index2>
+                              <!--#if expr="$DOCUMENT_ROOT = C:/apache2triadpath/htdocs"  -->
+                              <!--#echo var="DOCUMENT_ROOT" -->
+                              <!--#else -->
+                              <!--#echo var="DOCUMENT_ROOT" -->
+                        <img src=gfx/ico_warn.gif align=absmiddle title="Apache2TriadCP must be located under C:/apache2triadpath/htdocs">
+                              <!--#endif -->
+                      </TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap width=100>Local Time</TD>
+                            <TD class=index2>
+                              <!--#config timefmt="%r %A %d.%m.%Y" -->
+                              <!--#echo var="DATE_LOCAL" -->
+                      </TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap width=100> Logged in user </TD>
+                            <TD class=index2>
+                              <!--#if expr="$REMOTE_USER = root"  -->
+                              <!--#echo var="REMOTE_USER" -->
+                              <!--#else -->
+                              <!--#echo var="REMOTE_USER" -->
+                        <img src=gfx/ico_warn.gif align=absmiddle title="You are not logged in as root or not loged in at all to access this page in wich case anyone can see it and posibly exploit it">
+                              <!--#endif -->
+                      </TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap width=100>Client proxy</TD>
+                            <TD class=index2>
+                              <!--#if expr="$HTTP_X_FORWARDED_FOR = ''"  -->
+                              <!--#echo var="HTTP_X_FORWARDED_FOR" -->
+                              <!--#else -->
+                              <!--#echo var="HTTP_X_FORWARDED_FOR" -->
+                        <img src=gfx/ico_notice.gif align=absmiddle title="Client conection is proxied">
+                              <!--#endif -->
+                      </TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap width=100>Client address</TD>
+                            <TD class=index2>
+                              <!--#echo var="REMOTE_ADDR" -->
+                      </TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap width=100>Client port</TD>
+                            <TD class=index2>
+                              <!--#echo var="REMOTE_PORT" -->
+                      </TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap width=100>Access server via</TD>
+                            <TD class=index2>
+                              <!--#if expr="$SERVER_NAME = localhost"  -->
+                              <!--#echo var="SERVER_NAME" -->
+                        <img src=gfx/ico_yes.gif align=absmiddle title="Accessing the server from localhost , 127.0.0.1 or the other ip(s) of the machine availes all the cp links">
+                              <!--#else -->
+                              <!--#echo var="SERVER_NAME" -->
+                        <img src=gfx/ico_notice.gif width="16" height="16" align=absmiddle title="Accessing the server from outside the machine it runs on makes unavailable some of the links in the cp">
+                              <!--#endif -->
+                      </TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap width=100><p>Visits</p></TD>
+                            <TD class=index2>
+                              <!--#exec cgi="count.cgi" -->
+                         </TD>
+                          </TR>
+                        </TBODY>
+                </TABLE></td>
+                  </tr>
+                </table>
+                <br>
+                 <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="12" align="center" valign="top"><img src="gfx/t_l.gif" width="10" height="12"></td>
+                    <td width="100%" height="12" background="gfx/t_t.gif"></td>
+                    <td width="12" align="center" valign="top"><img src="gfx/t_r.gif" width="10" height="12"></td>
+                  </tr>
+                </table>
+                <table width="100%" border="0" cellspacing="1" cellpadding="0" class="head0">
+                  <tr>
+                    <td class="title"><a name="inf" id="inf"></a> Info <a href="help.html#Info">?</a></td>
+                  </tr>
+                  <tr>
+                    <td><TABLE width=100% border=0 cellPadding=1 cellSpacing=1 bgcolor="#FFFFFF">
+                        <TBODY>
+                          <TR>
+                            <TD class=index1 noWrap width=40%>Apache2Triad version</TD>
+                            <TD width="60%" class=index2><b>
+                              <!--#include file="version.txt" -->
+                        <a href="readme.php?load=readme">readme</a></b>
+			<a href="readme.php">list</a>
+			  </TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap>Apache version</TD>
+                            <TD class=index2>2.2.0</TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap>MySQL version</TD>
+                            <TD class=index2>5.0.18 <a href="readme.php?load=mysql">readme</a></TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap>PostgreSQL version</TD>
+                            <TD class=index2>8.1.2 <a href="readme.php?load=pgsql">readme</a></TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap>Openssl version</TD>
+                            <TD class=index2>0.9.8a <a href="readme.php?load=openssl">readme</a></TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap>Slimftpd version</TD>
+                            <TD class=index2>3.18 <a href="readme.php?load=ftp">readme</a></TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap>Xmail version</TD>
+                            <TD class=index2>1.22 <a href="readme.php?load=mail">readme</a></TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap><i>Path to sendmail</i></TD>
+                            <TD class=index3>C:/apache2triadpath/mail/bin/sendmail.exe</TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap width=40%>Perl version</TD>
+                            <TD class=index2>5.8.7 <a href="readme.php?load=perl">readme</a></TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap width=40%><i>Path to Perl</i></TD>
+                            <TD class=index3>C:/apache2triadpath/perl/bin/perl.exe</TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap width=40%>PHP version</TD>
+                            <TD class=index2>5.1.2 <a href="readme.php?load=php">readme</a></TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap><i>Path to PHP</i></TD>
+                            <TD class=index3>C:/apache2triadpath/php/bin/php.exe</TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap>Python version</TD>
+                            <TD class=index2>2.3.5 <a href="readme.php?load=python">readme</a></TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap><i>Path to Python</i></TD>
+                            <TD class=index3>C:/apache2triadpath/python/bin/python.exe</TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap>A2T Info</TD>
+                            <TD class=index2><a href="info.html"> click here</a></TD>
+                          </TR>
+                          <TR>
+                            <TD class=index1 noWrap>A2CP Help</TD>
+                            <TD class=index2><a href="help.html"> click here</a></TD>
+                          </TR>
+                        </TBODY>
+                </TABLE></td>
+                  </tr>
+                </table></TD>
+              <TD align=middle vAlign=top width=65%>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="12" align="center" valign="top"><img src="gfx/t_l.gif" width="10" height="12"></td>
+                    <td width="100%" height="12" background="gfx/t_t.gif"></td>
+                    <td width="12" align="center" valign="top"><img src="gfx/t_r.gif" width="10" height="12"></td>
+                  </tr>
+                </table>
+                <table width="100%" border="0" cellspacing="1" cellpadding="0" class="head0">
+                  <tr>
+                    <td class="title"><a name="sys" id="sys"></a> System <a href="help.html#System">?</a></td>
+                  </tr>
+                  <tr>
+                    <td><table width=100% border=0 cellpadding=5 cellspacing=5 class=index2>
+                       <tbody>
+                          <tr align=middle valign=top>
+                            <td nowrap><a href="http://localhost/server-info"><img src="gfx/img_info.gif" title="info"
+                              width=32 height=32
+                              border=0></a><br> <a href="http://localhost/server-info">
+                                      server-info</a> </td>
+                            <td nowrap><a href="http://localhost/server-status"><img
+                              src="gfx/img_stats.gif" title="status"
+                              width=32 height=32
+                              border=0></a><br> <a href="http://localhost/server-status">server-status</a></td>
+                            <td nowrap><a href="error.cgi"><img
+                              src="gfx/img_log_err.gif" title="error logs"
+                              width=32 height=32
+                              border=0></a><br> <a href="error.cgi">server-error-logs</a></td>
+                            <td nowrap><a href="access.cgi"><img src="gfx/img_log_acc.gif" title="acess logs"
+                              width=32 height=32
+                              border=0></a><br> <a href="access.cgi">server-access-logs</a></td>
+                            <td nowrap><a href="security.cgi"><img src="gfx/img_security.gif" title="security log" width="32" height="32"
+                              border=0></a> <br> <a href="security.cgi">server-security-logs</a>&nbsp;</td>
+                          </tr>
+                          <tr align=middle valign=top>
+                            <td nowrap><a href="protect.cgi"><img src="gfx/img_protect.gif" title="system protection" width="32" height="32" border="0"><br>
+                                      server protection</a></td>
+                            <td nowrap><a href="onlinenews.php"><img
+                              src="gfx/img_news.gif" title="online news"
+                              width=32 height=32
+                              border=0></a> <br> <a href="onlinenews.php">online-news</a>&nbsp;</td>
+                            <td nowrap><a href="onlinefaq.php"><img src="gfx/img_faq.gif" title="online faq"
+                              width=32 height=32
+                              border=0></a> <br> <a href="onlinefaq.php">online-faq</a>
+                                    </td>
+                            <td nowrap><a href="onlinefeedback.php"><img src="gfx/img_feedback.gif" title="online feedback"
+                              width=32 height=32
+                              border=0></a> <br> <a href="onlinefeedback.php">online-feedback/support</a></td>
+                            <td nowrap><a href="onlineupdate.php"><img src="gfx/img_update.gif" title="online update" width="32" height="32" border="0"></a><br>
+                                      <a href="onlineupdate.php">online-update-check</a>
+                                    </td>
+                          </tr>
+                          <tr align=middle valign=top>
+                            <td nowrap> <a href="changepass.php"><img src="gfx/img_pass.gif" title="change password" width="32" height="32" border="0"></a><br>
+                                      <a href="changepass.php">change password</a></td>
+                            <td nowrap> <a href="changedom.cgi"><img
+                              src="gfx/img_domain.gif" title="change domain"
+                              width=32 height=32
+                              border=0></a><br> <a href="changedom.cgi">change
+                                      domain</a></td>
+                            <td nowrap> <a href="fixcgi.cgi"><img src="gfx/img_fix.gif" title="cgi fix" width="32" height="32" border="0"></a><br>
+                                      <a href="fixcgi.cgi">cgi-scripts-fix</a>
+                                    </td>
+                            <td nowrap><a href="fixregistry.cgi"><img
+                              src="gfx/img_clean_reg.gif" title="registry clean"
+                              width=32 height=32
+                              border=0></a> <br> <a href="fixregistry.cgi">registry
+                                      keys clean</a></td>
+                            <td nowrap> <a href="fixfiles.cgi"><img src="gfx/img_clean.gif" title="instalations clean"
+                              width=32 height=32
+                              border=0></a><br> <a href="fixfiles.cgi">old installations
+                                      clean</a></td>
+                          </tr>
+                        </tbody>
+                </table></td>
+                  </tr>
+                </table>
+                <br>
+                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="12" align="center" valign="top"><img src="gfx/t_l.gif" width="10" height="12"></td>
+                    <td width="100%" height="12" background="gfx/t_t.gif"></td>
+                    <td width="12" align="center" valign="top"><img src="gfx/t_r.gif" width="10" height="12"></td>
+                  </tr>
+                </table>
+                <table width="100%" border="0" cellspacing="1" cellpadding="0" class="head0">
+                  <tr>
+                    <td class="title"><a name="srv" id="srv"></a> Servers <a href="help.html#Servers">?</a></td>
+                  </tr>
+                  <tr>
+                    <td><table width=100% border=0 cellpadding=5 cellspacing=5 class="index2">
+                        <tr align=middle valign=top>
+                          <td width="33%" nowrap><a href="../awstats"><img
+                              src="gfx/img_apache.gif" alt="awstats"
+                              border=0 align="absmiddle" title="AWStats"></a><span class="desc">APACHE</span>
+                                    <a href="guihttpd.cgi"><img src="gfx/ico_conf.gif" title="Configuration gui" width="16" height="16" border="0"></a>
+                                     <a href="editor.php?load=httpdconf"><img src="gfx/ico_edit.gif" alt="httpd.conf" width="16" height="16" border="0"></a> <a href="test.shtml"><img src="gfx/ico_test.gif" alt="SSI Test" width="16" height="16" border="0"></a> <a href="file://C:/apache2triadpath/manual/index.html"><img src="gfx/ico_manual.gif" alt="Apache manual" width="16" height="16" border="0"></a> <a href="help.html#Apache"><img src="gfx/ico_help.gif" alt="Mysql Help" width="16" height="16" border="0"></a><br> <a href="editor.php?load=apachee">error
+                                    log </a> <a href="editor.php?load=apachea">
+                                    <br>
+                                    access log</a></td>
+                          <td width="34%" nowrap> <a href="../phpmyadmin"><img src="gfx/img_mysql.gif" alt="phpmyadmin"
+                              border=0 align="absmiddle" title="PhpMyAdmin"></a> <span class="desc">MYSQL</span>
+                                    <a href="guimysql.php"><img src="gfx/ico_conf.gif" title="Configuration gui" width="16" height="16" border="0"></a> <a href="editor.php?load=myini"><img src="gfx/ico_edit.gif" alt="my.ini" width="16" height="16" border="0"></a><a href="test.mysql.php"> <img src="gfx/ico_test.gif" alt="MySQL Test" width="16" height="16" border="0"></a> <a href="file://C:/apache2triadpath/Mysql/manual/index.html"><img src="gfx/ico_manual.gif" alt="MySQL manual" width="16" height="16" border="0"></a> <a href="help.html#MySql"><img src="gfx/ico_help.gif" alt="Mysql Help" width="16" height="16" border="0"></a><br> <a href="editor.php?load=mysqle">error
+                                    log<br>
+                                    </a> <a href="editor.php?load=mysqla"> access
+                                    log</a></td>
+                          <td width="33%" nowrap><a href="../phppgadmin"><img
+                              src="gfx/img_pgsql.gif" alt="phppgadmin" width="32" height="32"
+                              border=0 align="absmiddle" title="phpPgAdmin"></a> <span class="desc">PGSQL</span><a href="guipgsql.php"><img src="gfx/ico_conf.gif" title="Configuration gui" width="16" height="16" border="0"></a> <a href="editor.php?load=pgsqlconf"><img src="gfx/ico_edit.gif" alt="postgresql.conf" width="16" height="16" border="0"></a><a href="test.pgsql.php"> <img src="gfx/ico_test.gif" alt="PostgreSQL Test" width="16" height="16" border="0"></a>  <a href="file://C:/apache2triadpath/pgsql/manual/index.html"><img src="gfx/ico_manual.gif" alt="PostgreSQL manual" width="16" height="16" border="0"></a> <br>
+                               <a href="editor.php?load=pgsqllog">postgres log</a></td>
+                        </tr>
+                        <tr align=middle valign=top>
+                          <td nowrap><a href="../phpxmail"><img src="gfx/img_mail.gif" alt="phpxmail" border=0 align="absmiddle" title="PhpXmail"></a>
+                                    <span class="desc"> XMAIL</span> <a href="editor.php?load=xmailconf"><img src="gfx/ico_edit.gif" alt="server.tab" width="16" height="16" border="0"></a> <a href="test.mail.cgi"><img src="gfx/ico_test.gif" alt="Sendmail test" width="16" height="16" border="0"></a> <a href="file://C:/apache2triadpath/mail/manual/readme.html"><img src="gfx/ico_manual.gif" alt="Xmail manual" width="16" height="16" border="0"></a> <br>
+                             <a href="editor.php?load=mailread">read
+                                    log</a><br>
+                                    <a href="test.mail.php"> Php mail test</a></td>
+                          <td nowrap> <a href="../uebimiau"><img
+                              src="gfx/img_ssl.gif" alt="uebimiau"
+                              border=0 align="absmiddle" title="Uebimiau"></a> <span class="desc">OPENSSL</span> <a href="editor.php?load=opensslcnf"><img src="gfx/ico_edit.gif" alt="openssl.cnf" width="16" height="16" border="0"></a>  <a href="file://C:/apache2triadpath/Opssl/manual/index.html"><img src="gfx/ico_manual.gif" alt="OpenSSL manual" width="16" height="16" border="0"></a> <br>
+                                    <a href="editor.php?load=openssle">error log<br>
+                                    </a> <a href="editor.php?load=openssla"> access
+                                    log</a></td>
+                          <td nowrap><a href="../phpsftpd"><img src="gfx/img_ftp.gif" alt="phpsftpd"
+                              border=0 align="absmiddle" title="PHPsFTPd"></a><span class="desc">SLIMFTPD </span><a href="editor.php?load=slimftpdconf"><img src="gfx/ico_edit.gif" alt="slimftpd.conf" width="16" height="16" border="0"></a>  <br>
+                                    <a href="editor.php?load=slimftpdlog">slimftpd
+                                    log</a></td>
+                        </tr>
+                        <tbody>
+                        </tbody>
+                </table></td>
+                  </tr>
+                </table>
+                <br>
+                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="12" align="center" valign="top"><img src="gfx/t_l.gif" width="10" height="12"></td>
+                    <td width="100%" height="12" background="gfx/t_t.gif"></td>
+                    <td width="12" align="center" valign="top"><img src="gfx/t_r.gif" width="10" height="12"></td>
+                  </tr>
+                </table>
+                <table width="100%" border="0" cellspacing="1" cellpadding="0" class="head0">
+                  <tr>
+                    <td class="title"><a name="int" id="int"></a> Interpreters <a href="help.html#Interpreters">?</a></td>
+                  </tr>
+                  <tr>
+                    <td><table width=100% border=0 cellpadding=5 cellspacing=5 class=index2>
+                        <tbody>
+                          <tr align=middle valign=top>
+                            <td width="33%" nowrap><img src="gfx/img_php.gif" title="PHP"
+                              border=0 align="absmiddle"> <span class="desc">PHP</span>
+                                      <a href="guiphp.php"><img src="gfx/ico_conf.gif" title="Configuration gui" width="16" height="16" border="0"></a>
+                                       <a href="info.php"><img src="gfx/ico_view.gif" alt="View Info" width="16" height="16" border="0" title="Extended Details"></a> <a href="editor.php?load=phpini"><img src="gfx/ico_edit.gif" alt="php.ini" width="16" height="16" border="0"></a> <a href="test.php"><img src="gfx/ico_test.gif" alt="PHP test" width="16" height="16" border="0"></a> <a href="file://C:/apache2triadpath/Php/manual/index.html"><img src="gfx/ico_manual.gif" alt="PHP manual" width="16" height="16" border="0"></a>  <br>
+                              <a href="editor.php?load=phplog">PHP Error log</a> <br>
+                              <a href="file://C:/apache2triadpath/Php/manual-pear/index.html">Pear manual </a> <a href="webpear.php?command=search">Pear Frontend</a><br>
+                                      <a href="file://C:/apache2triadpath/php/manual-smarty/index.html">Smarty
+                                      manual</a><br>
+                               <a href="test.sqlite.php">SQLite test</a> <a href="../phpsqliteadmin">PHPSQLiteAdmin</a></td>
+                            <td width="30%" nowrap><img
+                              src="gfx/img_perl.gif" title="Perl"
+                              border=0 align="absmiddle"><span class="desc">PERL</span> <a href="info.cgi"><img src="gfx/ico_view.gif" alt="View Info" width="16" height="16" border="0" title="Extended Details"></a>  <a href="test.cgi"><img src="gfx/ico_test.gif" alt="CGI perl test" width="16" height="16" border="0"></a> <a href="file://C:/apache2triadpath/Perl/manual/index.html"><img src="gfx/ico_manual.gif" alt="Perl manual" width="16" height="16" border="0"></a> <br>
+                                      <a href="test.pl">Mod_Perl test</a> <br>
+                                      <a href="test.asp">Apache::ASP test</a><a href="test.cgi">
+                                      </a><br>
+                              <a href="file://C:/apache2triadpath/Perl/manual-asp/index.html">Apache::ASP
+                                    manual</a>                            </td>
+                            <td width="27%" nowrap><img
+                              src="gfx/img_python.gif" title="Python"
+                              border=0 align="absmiddle"> <span class="desc">PYTHON</span> <a href="info.py"><img src="gfx/ico_view.gif" alt="View Info" width="16" height="16" border="0" title="Extended Details"></a>  <a href="test.py"><img src="gfx/ico_test.gif" alt="CGI python test" width="16" height="16" border="0"></a> <a href="file://C:/apache2triadpath/Python/manual/index.html"><img src="gfx/ico_manual.gif" alt="Python manual" width="16" height="16" border="0"></a> <br>
+                              <a href="test.psp">PSP Test</a><br>
+                              <a href="info.spy">Spyce info</a><a href="test.spy"> 
+                              Spyce
+                                      test</a> <br>
+                              <a href="file://C:/apache2triadpath/Python/manual-spyce/doc-single.html">Spyce manual <br>
+                              </a>
+                                      <a href="file://C:/apache2triadpath/Python/manual-wx/wxPythonManual.html">wxPy
+                                      manual</a></td>
+                          </tr>
+                        </tbody>
+                </table></td>
+                  </tr>
+                </table>
+                <br>
+              </TD>
+            </TR>
+            <TR vAlign=top>
+              <TD colspan="2" align=left>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="12" align="center" valign="top"><img src="gfx/t_l.gif" width="10" height="12"></td>
+                    <td width="100%" height="12" background="gfx/t_t.gif"></td>
+                    <td width="12" align="center" valign="top"><img src="gfx/t_r.gif" width="10" height="12"></td>
+                  </tr>
+                </table>
+                <table width="100%" border="0" cellspacing="1" cellpadding="0" class="head0">
+                  <tr>
+                    <td class="title"><a name="sp"></a> Services/Processes  <a href="help.html#Services/Processes">?</a></td>
+                  </tr>
+                  <tr>
+                    <td><table width=100% border=0 cellpadding=5 cellspacing=5 class=index2>
+                        <tbody>
+                          <tr align=middle valign=top>
+                            <td nowrap><div align="center">
+												        <!--#exec cgi="services.cgi" -->
+                                <!--#exec cgi="proceses.cgi" -->
+														</div></td>
+                          </tr>
+                        </tbody>
+                 </table></td>
+                  </tr>
+                </table></TD>
+            </TR>
+          </TBODY>
+        </TABLE>
+        <div align="center"><font color="#999999" size="1" face="Verdana, Arial, Helvetica, sans-serif"><br>
+  </font>      </div></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<TABLE width="99%" border=0 cellPadding=0 cellSpacing=0 class=ttb>
+  <TBODY>
+    <TR>
+      <TD><IMG height=12 src="gfx/tb12_l.gif"
+      width=10></TD>
+      <TD class=tb12bkg><IMG height=12
+      src="gfx/spacer.gif" width=200></TD>
+      <TD><IMG height=12 src="gfx/tb12_r.gif"
+      width=10></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<div align="center"><font color="#999999" size="1" face="Verdana, Arial, Helvetica, sans-serif"><br>
+Apache2TriadCP by <a href="http://alexamancini.com" target="_blank">Vlad Alexa Mancini</a><br> 
+Programming by <a href="http://nextcode.org">NextCode</a> 
+Graphics by <a href="http://nextdesign.eu.org">NextDesign</a> 
+    </font></div>
+<br>
+</body>
+</html>

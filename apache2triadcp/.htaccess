@@ -1,0 +1,4 @@
+Require user root
+AuthType Basic
+AuthName "Apache2TriadCP"
+AuthUserFile C:\apache2triadpath\htdocs\.htpasswd

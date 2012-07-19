@@ -1,0 +1,1588 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>Apache2TriadCP Help</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="SHORTCUT ICON" href="favicon.ico">
+<style>
+<!--
+ p.MsoNormal
+        {mso-style-parent:"";
+        margin-bottom:.0001pt;
+        font-size:12.0pt;
+        font-family:"Times New Roman";
+        margin-left:0in; margin-right:0in; margin-top:0in}
+-->
+</style>
+</head>
+<body background="gfx/lines.gif">
+<div align="center"><b><span style="font-size: 16.0pt"><a name="Top"></a></span></b>
+</div>
+<TABLE width="99%" border=0 cellPadding=0 cellSpacing=0 class=ttb>
+  <TBODY>
+    <TR>
+      <TD><IMG alt="" height=12 src="gfx/tt12_l.gif"
+      width=10></TD>
+      <TD class=tt12bkg><IMG alt="" height=12
+      src="gfx/spacer.gif" width=200></TD>
+      <TD><IMG alt="" height=12 src="gfx/tt12_r.gif"
+      width=10></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<TABLE width="99%" border=0 cellPadding=10 cellSpacing=0 class=bodyline>
+  <TR>
+      
+    <TD class="logo"><div align="center"><a href=index.html><img src="gfx/apache2triadcp_logo.gif" width="352" height="40" border="0"></a></div></TD>
+  </TR>
+  <TBODY>
+    <TR>
+      <TD width="995">
+<blockquote>
+          <blockquote>
+            <p class="MsoNormal" style="margin-left:-.5in" align="left">&nbsp;</p>
+            <p class="MsoNormal" style="margin-left:-.5in" align="left"><b>Welcome to the help page for Apache2TriadCP</b><br>
+              <br>
+                          </p>
+            <p class="MsoNormal" style="margin-left: -.5in">To bring up the control
+        panel enter
+                <a style="color: blue; text-decoration: underline; " href="http://localhost/apache2triadcp/">http://localhost/apache2triadcp/</a> into a web browser. You will be
+        prompted for username and password. Default user and is root and the password is the one you set up in the installer. If you have used the change domain script, you should still be
+        able to access through local host. <br>
+              </p>
+            <p class="MsoNormal" style="margin-left:-.5in">
+                        <a href="#LEGEND">Icon Legend</a></p>
+            <p class="MsoNormal" style="margin-left:-.5in">
+                        <a href="#Intro">Introduction</a></p>
+            <p class="MsoNormal" style="margin-left:-.5in">
+                        <a href="#Additional">Additional Info</a></p>
+            <p class="MsoNormal" style="margin-left:-.5in">
+                        <a href="#FAQ">FAQ</a></p>
+            <p class="MsoNormal" style="margin-left: -.5in">&nbsp;</p>
+            <p class="MsoNormal" style="margin-left: -.5in">These are
+                the blocks on the main page of the Apache2Triad Control Panel</p>
+            <p class="MsoNormal" style="margin-left: -.5in">&nbsp;
+</p>
+            <p class="MsoNormal" style="margin-left:-.5in"><a href="#Status">Status</a></p>
+            <p class="MsoNormal" style="margin-left:-.5in"><a href="#Info">Info</a></p>						
+            <p class="MsoNormal" style="margin-left:-.5in">-------------------</p>
+            <p class="MsoNormal" style="margin-left:-.5in">
+                <a href="#System">System</a></p>
+            <ul>
+                        
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">
+                        <a href="#Status_Scripts">Server Info</a></p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">
+                        <a href="#Status_Scripts">Server Status</a></p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">
+                        <a href="#Server_Logs">Server Error Log</a></p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">
+                        <a href="#Server_Logs">Server Access Log</a></p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">
+                        <a href="#Server_Logs">Server Security Logs</a></p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">
+                        <a href="#Server_Protection">Server Protection</a></p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">
+                        <a href="#Online_News">Online News</a></p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">
+                        <a href="#Online_FAQ">Online FAQ</a></p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">
+                        <a href="#Online_Feedback/Support">Online Feedback/Support</a></p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">
+                        <a href="#Online_Update_Check">Online Update Check</a></p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">
+                        <a href="#Change_Password">Change Password</a></p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">
+                        <a href="#Change_Domain">Change Domain</a></p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">
+                        <a href="#CGI_Scripts_Fix">CGI Scripts Fix</a></p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">
+                        <a href="#Registry_keys_clean_">Registry Keys Clean</a></p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">
+                        <a href="#Old_installations_clean_">Old Installations
+                        Clean</a></p>
+              </li>
+            </ul>
+            <p class="MsoNormal" style="margin-left:-.5in">-------------------</p>
+            <p class="MsoNormal" style="margin-left:-.5in"><a name="Servers" href="#Servers">Servers</a></p>
+            <ul>
+                        
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">
+                        <a href="#Apache">Apache</a></p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in"><a href="#MySql">
+                        MySql</a></p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">OpenSSL</p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">Xmail</p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">SlimFTPd</p>
+              </li>
+            </ul>
+            <p class="MsoNormal" style="margin-left:-.5in">-------------------</p>
+            <p class="MsoNormal" style="margin-left:-.5in"><a name="Interpreters" href="#Interpreters">Interpreters</a></p>
+            <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+            <ul>
+                        
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">PHP</p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">Perl</p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">Python</p>
+              </li>
+              <li>
+                        
+                <p class="MsoNormal" style="margin-left:-.5in">TCL</p>
+              </li>
+            </ul>
+            <p class="MsoNormal" style="margin-left:-.5in">
+                -------------------</p>
+            <p class="MsoNormal" style="margin-left:-.5in">
+                <a href="#Services/Processes">Services/Processes</a></p>
+            <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+            <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+            <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+            <p class="MsoNormal" style="margin-left:-.5in"><u><i><b><a name="Status"><font size="4">Status</font></a></b></i></u></p>
+            <p class="MsoNormal" style="margin-left:-.5in" align="left">&nbsp;</p>
+            <p class="MsoNormal" style="margin-left:-.5in" align="left">&nbsp;</p>
+            <p class="MsoNormal" style="margin-left:-.5in" align="left">This block
+                displays much information about versions and locations. If something is
+                not working right check here and match up locations in shebang's ect.
+                Also make sure the needed version of whatever language you are working
+                with matches up. Some useful info about
+                your apache2triad installation. See<br>
+      <a href="#LEGEND">icon legend</a>. Most of the files in the System Information
+                section requires you to be at the machine to retrieve some documents,
+                this is because the files are outside of the doc root and cannot be
+                accessed remotely.  You
+                can click to bring up additional info, usually the readme's. You have to
+                be logged on locally to view these files. You can hover the mouse over
+                the graphics and it will show you the error.</p>
+            <p class="MsoNormal" style="margin-left:-.5in" align="left">&nbsp;</p>
+            <p class="MsoNormal" style="margin-left:-.5in" align="left">&nbsp;</p>
+            <p class="MsoNormal" style="margin-left:-.5in">
+                <a href="#Top">Top</a></p>
+            <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+            <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+            <p class="MsoNormal" style="margin-left:-.5in"><u><i><b><a name="Info" id="Info"><font size="4">Info</font></a></b></i></u></p>
+            <p class="MsoNormal" style="margin-left:-.5in" align="left">&nbsp;</p>
+            <p class="MsoNormal" style="margin-left:-.5in" align="left">&nbsp;</p>
+            <p class="MsoNormal" style="margin-left:-.5in" align="left">This block
+                displays  information about curent server status , user info and setup info. You can tell of problems with the installation here if you see warning or notice icons <a href="#LEGEND">(icon legend)</a></p>
+            <p class="MsoNormal" style="margin-left:-.5in" align="left">&nbsp;</p>
+            <p class="MsoNormal" style="margin-left:-.5in" align="left">&nbsp;</p>
+            <p class="MsoNormal" style="margin-left:-.5in">
+                <a href="#Top">Top</a></p>
+            <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+            <p class="MsoNormal" style="margin-left:-.5in"><u><i><b><a name="Services/Processes"><font size="4">Services/Processes</font></a></b></i></u></p>
+            <p class="MsoNormal" style="margin-left:-.5in" align="left">&nbsp;</p>
+            <p class="MsoNormal" style="margin-left:-.5in" align="left">&nbsp;</p>
+            <p class="MsoNormal" style="margin-left:-.5in" align="left">These control the heart of
+                Apache2triad programs. Checked boxes will auto-start when Windows
+                starts. You can stop and start <a href="#MySql_info">MySql</a>,
+                <a href="#Xmail_info">Xmail</a>,
+                and <a href="#Slimftpd_info">Slimftpd</a> from here. Please note that only Apache can be stopped and
+                NOT started from here. Use <a href="#ApacheMonitor_info">ApacheMonitor</a>
+                to restart Apache. Also note Xmail does NOT run under Windows 9x
+                platforms.</p>
+            <p class="MsoNormal" style="margin-left:-.5in" align="left">&nbsp;</p>
+            <p class="MsoNormal" style="margin-left:-.5in" align="left">&nbsp;</p>
+            <p class="MsoNormal" style="margin-left:-.5in">
+                <a href="#Top">Top</a></p>
+          </blockquote>
+        </blockquote></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<TABLE width="99%" border=0 cellPadding=0 cellSpacing=0 class=ttb>
+  <TBODY>
+    <TR>
+      <TD><IMG alt="" height=12 src="gfx/tb12_l.gif"
+      width=10></TD>
+      <TD class=tb12bkg><IMG alt="" height=12
+      src="gfx/spacer.gif" width=200></TD>
+      <TD><IMG alt="" height=12 src="gfx/tb12_r.gif"
+      width=10></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<div>
+  <div align="center">
+<br>
+    <b><span style="font-size: 16.0pt"><a name="Intro" id="Intro"></a></span></b>    <br>
+        <TABLE width="99%" border=0 cellPadding=0 cellSpacing=0 class=ttb>
+      <TBODY>
+        <TR>
+          <TD><IMG alt="" height=12 src="gfx/tt12_l.gif"
+      width=10></TD>
+          <TD class=tt12bkg><IMG alt="" height=12
+      src="gfx/spacer.gif" width=200></TD>
+          <TD><IMG alt="" height=12 src="gfx/tt12_r.gif"
+      width=10></TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+    <TABLE width="99%" border=0 cellPadding=10 cellSpacing=0 class=bodyline>
+      <TBODY>
+        <TR>
+          <TD width="995"><blockquote>
+              <blockquote>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in"><b><span style="font-size: 16.0pt">Introduction</span></b></p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The goal of this document is to provide support
+information on the Apache2Triad web server bundle (Current Version is 1.5.0). It
+will attempt to explain some common issues some people have while
+installing/running it. It will not contain information of each specific program,
+as this is well outside the scope of this document. It is always best to consult
+with the manuals/documentation of the program you are using. Even though
+Apache2Triad was designed to run on a Windows platform, most of the programs
+were developed on Linux type computers. Some, not all, have Windows support
+information. Some people would say that running an Apache web server on a
+Windows machine is unsecured, although <i>ANY</i> server ran on <i>ANY</i>
+machine may be unsecured, it is always usually a lack of knowledge of the
+security mechanisms that provide a unsecured environment.</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It is recommended that only experienced users,
+with a vast knowledge of how networks, and its components (Apache Web Server,
+ect.) should install this software. It <i>IS NOT</i> your average software; a
+lot of time, patience and effort are required to maintain such a server. Having
+said this, all responsibilities remain on the end user who installed such
+systems, not the creators. From time to time there may be security situations,
+in such event it is the responsibility of the end user to correct such issues.&nbsp;
+                </p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Some notes before when begin.
+Throughout this document we will use some common variables, like install path
+domain ect. Below is a table you can use to identify such variables. Information
+contained in () are the defaults, and will probably be the same unless you
+changed them at installation. The default domain is and will remain
+                <a href="http://localhost/">http://localhost/</a> throughout this document.
+        If you use the change domain script, you can use either.</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">%InstallDir%&nbsp;&nbsp;&nbsp; the path which you installed apache2triad (C: /apache2triad/)</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">%DocRoot%&nbsp;&nbsp;&nbsp; the web server’s documents root. (C: /apache2triad/htdocs/)</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">%windir%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                the system’s base dir. It is OS specific. (XP Users: C: /windows/)</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in"><a href="#Top">Top</a></p>
+              </blockquote>
+            </blockquote></TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+    <TABLE width="99%" border=0 cellPadding=0 cellSpacing=0 class=ttb>
+      <TBODY>
+        <TR>
+          <TD><IMG alt="" height=12 src="gfx/tb12_l.gif"
+      width=10></TD>
+          <TD class=tb12bkg><IMG alt="" height=12
+      src="gfx/spacer.gif" width=200></TD>
+          <TD><IMG alt="" height=12 src="gfx/tb12_r.gif"
+      width=10></TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+    <div align="center"><br>
+      <u><a name="System"></a></u>    </div>
+    <TABLE width="99%" border=0 cellPadding=0 cellSpacing=0 class=ttb>
+      <TBODY>
+        <TR>
+          <TD><IMG alt="" height=12 src="gfx/tt12_l.gif"
+      width=10></TD>
+          <TD class=tt12bkg><IMG alt="" height=12
+      src="gfx/spacer.gif" width=200></TD>
+          <TD><IMG alt="" height=12 src="gfx/tt12_r.gif"
+      width=10></TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+    <TABLE width="99%" border=0 cellPadding=10 cellSpacing=0 class=bodyline>
+      <TBODY>
+        <TR>
+          <TD width="995"><blockquote>
+              <blockquote>
+                <p class="MsoNormal" style="margin-left:-.5in"><span style="font-size: 16pt"><b>System</b></span>
+                </u></p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left: -.5in">
+                <b>
+                <a name="Status_Scripts">Status Scripts</a></b></p>
+                <p class="MsoNormal" style="margin-left: -.5in">&nbsp;
+                </p>
+                <p align="left" class="MsoNormal" ><img src="gfx/img_info.gif" width="32" height="32"></p>
+                <p align="left" class="MsoNormal" >s<i>erver</i>-<i> info</i>
+                – Apache’s built in server information script. Displays a variety of
+                information.<br>
+            </p>
+                <p align="left" class="MsoNormal" ><img src="gfx/img_stats.gif" width="32" height="32"></p>
+                <p align="left" class="MsoNormal" >s<i>erver-status</i> –
+                Apache’s built in status script. Displays a variety of information.</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">
+                <a href="#Top">Top</a></p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">
+                <b>
+                <a name="Server_Logs">Server Logs</a></b></p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;
+                </p>
+                <p align="left" class="MsoNormal" ><img src="gfx/img_log_err.gif" width="32" height="32"></p>
+                <p align="left" class="MsoNormal" ><i>server-error-logs</i>
+                – Displays most frequent errors and the last 10 errors from Apache,
+                Apache SSL, MySql, PHP error log. This is very useful in finding common
+                errors on your system.<br>
+            </p>
+                <p align="left" class="MsoNormal" ><img src="gfx/img_log_acc.gif" width="32" height="32"></p>
+                <p align="left" class="MsoNormal" ><i>server-access-logs</i>
+                - Displays all of the servers access information.<br>
+            </p>
+                <p align="left" class="MsoNormal" ><img src="gfx/img_security.gif" width="32" height="32"></p>
+                <p align="left" class="MsoNormal" ><i>server-security-logs</i> – Displays a list of past known hacking
+                attempts on your server. If possible, it’s recommended to check this
+                frequently and filter out these IP addresses. (Use your firewall to deny
+                these IP addresses access). It should be also noted, some of these may
+                be valid attempts. Caution should be used here.</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">
+                <a href="#Top">Top</a></p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">
+                <b>
+                <a name="Server_Protection">Server Protection</a></b></p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;
+                </p>
+                <blockquote>
+                  <p align="left" class="MsoNormal" style="margin-left:-.5in"><img src="gfx/img_protect.gif" width="32" height="32"></p>
+                  <p align="left" class="MsoNormal" style="margin-left:-.5in">This script
+                will attempt to add some security settings to various scripts/programs.
+                What is displayed on the screen will be changed. </p>
+                  <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                  <p class="MsoNormal" style="margin-left:-.5in">
+                <font color="red">After running the script you should restart your
+                computer or all the servers for changes to take place</font> </p>
+                </blockquote>
+                <p class="MsoNormal" style="margin-left:-.5in">
+        <a href="#Top">Top</a></p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">
+        <b>
+        <a name="Online_Information">Online Information</a></b></p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">
+        <b>
+        <a name="Online_News">Online News</a></b></p>
+                <blockquote>
+                  <p class="MsoNormal" style="margin-left:-.5in"><b><br>
+              <img src="gfx/img_news.gif" width="32" height="32">              </b></p>
+                  <p align="left" class="MsoNormal" style="margin-left:-.5in">Click here
+                often to check for various news on Apache2Triad.</p>
+                </blockquote>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">
+        <a href="#Top">Top</a></p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">
+                <b>
+                <a name="Online_FAQ">Online FAQ</a></b></p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;
+                </p>
+                <blockquote>
+                  <p align="left" class="MsoNormal" style="margin-left:-.5in"><img src="gfx/img_faq.gif" width="32" height="32"></p>
+                  <p align="left" class="MsoNormal" style="margin-left:-.5in">Click here
+                first, if you have any problems. This displays the Online FAQ. This
+                document should not differ much from the one located in this document,
+                it's wise to check both.</p>
+                  <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                </blockquote>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">
+                <b>
+                <a name="Online_Feedback/Support">Online Feedback/Support</a></b></p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;
+                </p>
+                <blockquote>
+                  <p align="left" class="MsoNormal" style="margin-left:-.5in"><img src="gfx/img_feedback.gif" width="32" height="32"></p>
+                  <p align="left" class="MsoNormal" style="margin-left:-.5in">Click this
+                to go to the forums. Be sure to read the <a href="#FAQ">Apache2Triad FAQ</a>,
+                and the
+                <a target="_blank" href="http://www.nextdesign.eu.org/forums/viewtopic.php?t=48">
+                Forum Posting Guidelines</a> before posting please.</p>
+                </blockquote>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">
+                <b>
+                <a name="Online_Update_Check">Online Update Check</a></b></p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;
+                </p>
+                <blockquote>
+                  <p align="left" class="MsoNormal" style="margin-left:-.5in"><img src="gfx/img_update.gif" width="32" height="32"></p>
+                  <p align="left" class="MsoNormal" style="margin-left:-.5in">Click here
+                to find updates, new versions for Apache2Triad bundle.</p>
+                </blockquote>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">
+                <a href="#Top">Top</a></p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left: -.5in"><b>
+                <a name="Change_Password">Change Password</a></b></p>
+                <p align="left" class="MsoNormal" style="margin-left: -.5in">&nbsp;</p>
+                <p align="left" class="MsoNormal" style="margin-left: -.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left: -.5in">&nbsp;
+                </p>
+                <p align="left" class="MsoNormal" ><img border="0" src="gfx/img_pass.gif" width="32" height="32"><br>
+                  This is the first thing you should
+                do after installing Apache2triad! Take heed: <b><i>You must not have a
+                password with common or dictionary words because of security! </i></b>Your Old Password
+                        <i>WILL BE DISPLAYED</i>, this is not a field for
+                entering your old password. There are programs available that use
+                dictionary and even brute force attacks to break passwords, and they do
+                work. The best password is one that someone could not associate with you
+                (pet’s names, kid’s names ect.). A ideal password should include letters
+                and numbers. This will be the password for all programs using the user
+                        <i>root</i>. Restart all services for this to take full effect. <b>
+                <i><u>If you do not change the password, your server(s) will be open to
+                anyone who knows the default password (triadpass)</u></i></b></p>
+                <p align="left" class="MsoNormal" >Also remember, if you
+                have manually changed your passwords for the different apps and then use
+                this script, it could possibly break those passwords and make the
+                programs inoperable.</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p class="MsoNormal" style="margin-left: -.5in">
+                <a href="#Top">Top</a></p>
+                <p class="MsoNormal" style="margin-left: -.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left: -.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left: -.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left: -.5in"><b>
+                <a name="Change_Domain">Change Domain</a></b></p>
+                <p class="MsoNormal" >&nbsp;</p>
+                <p class="MsoNormal" ><img src="gfx/img_domain.gif" width="32" height="32"></p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >Where <i>New Domain</i> is your
+                domain (default is localhost), enter the domain and click <i>Change
+                domain</i>. You must own the domain in which you are changing to. If not
+                there will be errors as it simply will not route properly. If you use a
+                domain router (no-ip.com, dns2go.com ect.) enter it here. Leave out and
+                suffix (e.g. www) It’s generally not a good idea to use IP address here.
+                        <b><i>YOU MUST RESTART APACHE AND XMAIL FOR THE CHANGES TO TAKE EFFECT!!
+                        </i></b>Although you can stop/start Xmail from the control panel, it’s
+                best to use the bundled program ApacheMonitor
+                (%InstallDir%\bin\apachemonitor.exe) to restart Apache.</p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">
+                <a href="#Top">Top</a></p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;
+                </p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in"><b>
+                <a name="CGI_Scripts_Fix">CGI
+                Scripts Fix</a></b></p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <blockquote>
+                  <p class="MsoNormal" style="margin-left:-.5in"><img src="gfx/img_fix.gif" width="32" height="32"><br>
+            </p>
+                  <p align="left" class="MsoNormal" style="margin-left:-.5in">This script
+                will change all acceptable files (either perl, python or TCL) to the
+                appropriate location it needs to point to. This is a very useful script.</p>
+                </blockquote>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">
+                <a href="#Top">Top</a></p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in"><b>
+                <a name="Registry_keys_clean_">Registry keys clean</a></b></p>
+                <blockquote>
+                  <p class="MsoNormal" style="margin-left:-.5in"><br>
+              <img src="gfx/img_clean_reg.gif" width="32" height="32">            </p>
+                  <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                  <p align="left" class="MsoNormal" style="margin-left:-.5in">This script
+                will fix MySql registry keys from a old MySql installation , with wrong
+                service paths, known to cause problems for apache2triad. Run this if you
+                have problems and have had a variation of Apache/MySql ect previously.</p>
+                </blockquote>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">
+                <a href="#Top">Top</a></p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in"><b>
+                <a name="Old_installations_clean_">Old installations clean </a></b></p>
+                <blockquote>
+                  <p class="MsoNormal" style="margin-left:-.5in"><br>
+              <img src="gfx/img_clean.gif" width="32" height="32">            </p>
+                  <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                  <p align="left" class="MsoNormal" style="margin-left:-.5in">This script
+                will search for some files from old installations of php MySql and perl
+                , known to cause problems for apache2triad. Delete any files it finds.</p>
+                  <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                </blockquote>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left:-.5in">
+                <a href="#Top">Top</a></p>
+                <p class="MsoNormal" style="margin-left:-.5in">&nbsp;</p>
+              </blockquote>
+            </blockquote></TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+    <TABLE width="99%" border=0 cellPadding=0 cellSpacing=0 class=ttb>
+      <TBODY>
+        <TR>
+          <TD><IMG alt="" height=12 src="gfx/tb12_l.gif"
+      width=10></TD>
+          <TD class=tb12bkg><IMG alt="" height=12
+      src="gfx/spacer.gif" width=200></TD>
+          <TD><IMG alt="" height=12 src="gfx/tb12_r.gif"
+      width=10></TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+    <div align="center"><u></u><br>
+      <u><b><a name="Apache"></a></b></u>    </div>
+    <TABLE width="99%" border=0 cellPadding=0 cellSpacing=0 class=ttb>
+      <TBODY>
+        <TR>
+          <TD><IMG alt="" height=12 src="gfx/tt12_l.gif"
+      width=10></TD>
+          <TD class=tt12bkg><IMG alt="" height=12
+      src="gfx/spacer.gif" width=200></TD>
+          <TD><IMG alt="" height=12 src="gfx/tt12_r.gif"
+      width=10></TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+    <TABLE width="99%" border=0 cellPadding=10 cellSpacing=0 class=bodyline>
+      <TBODY>
+        <TR>
+          <TD width="995"><blockquote>
+              <blockquote>
+                <p class="MsoNormal" style="margin-left:-.5in"><span style="font-size: 16pt"><b>Apache</b></span></p>
+                <p class="MsoNormal" style="margin-left:-.5in"><br>
+              <img src="gfx/img_apache.gif" width="32" height="32">                </p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;
+                </p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">
+                You will notice 2 icons on either side of Apache,
+                <img src="gfx/img_apache.gif" width="16" height="16" border="0" > and
+                <img border="0" src="gfx/ico_conf.gif" >. Click
+                the&nbsp;
+                <img src="gfx/img_apache.gif" width="16" height="16" border="0" > to
+                bring up <a href="#AWStats_info">AWStats</a>. And
+                <img border="0" src="gfx/ico_conf.gif" > to bring
+                up the <a href="#Apache_Configuration">Apache configuration GUI.</a></p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;
+                </p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;
+                </p>
+                <p align="left" class="MsoNormal" style="margin-left:-.5in">&nbsp;
+                </p>
+                <p class="MsoNormal" style="margin-left: -.5in"><u><b>
+                <a name="Apache_Scripts">Apache Scripts</a></b></u></p>
+                <p align="left" class="MsoNormal" style="margin-left: -.5in">&nbsp;</p>
+                <p align="left" class="MsoNormal" style="margin-left: -.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left: -.5in">
+                <a href="#AWStats_info">AWStats</a> | <a href="#Apache_Configuration">configuration</a> |
+                <a href="#apache_error_log">error.log</a> | <a href="#apache_access_log">access.log</a> |
+                <a href="#httpd.conf">httpd.conf</a> |
+                <a href="#SSI_Test">SSI test</a> |
+                <a href="http://httpd.apache.org/docs-2.0/platform/windows.html">Apache
+                Manual</a> | <a href="#apache_asp">ApacheASP</a></p>
+                <p class="MsoNormal" style="margin-left: -.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left: -.5in">&nbsp;</p>
+                <p align="left" class="MsoNormal" style="margin-left: -.5in">&nbsp;</p>
+                <p class="MsoNormal" style="margin-left: -.5in"><b>
+                <a name="Apache_Configuration">Apache Configuration</a></b></p>
+              </blockquote>
+              <p align="left" class="MsoNormal" style="margin-left: -.5in">&nbsp;</p>
+              <blockquote>
+                <p align="left" class="MsoNormal" >This script allows for
+                some minor and often changed parts of the httpd.conf file. Although not
+                as powerful as editing the httpd.conf itself, it can be very useful.</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >The upper checkboxes
+                allow for different variations of programming languages that can be used
+                with apache. Its best you don't load either of mod_perl , mod_python or
+                mod_tcl as long as CGI is loaded Apache::ASP needs mod perl to be loaded
+                in order for it to function. When enabling CGI you are enabling Perl ,
+                Python and TCL in CGI mode. Disabling one of SSI, PHP or CGI will render
+                parts of the Apache2Triad CP inoperable. <font color="red">After running
+                the script you should restart apache for changes to take place</font>.</p>
+                <p align="left" class="MsoNormal" >Be aware that <b>The
+                server name and port of the server: </b>is NOT the same as the domain
+                name change script.</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >For production, or
+                live servers, its best leave as little info about what kind of system
+                you are running. The only info that web visitors need from your site is
+                the content, not what makes it run. Good settings for live servers could
+                be: </p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" ><b>The server
+                signature configuration : Off or Email</b><br>
+      &nbsp;</p>
+                <p align="left" class="MsoNormal" ><b>The amount of
+                server info made public : Prod</b></p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >More Info on
+                <a href="#Apache_Info">Apache</a> |
+                <a href="http://httpd.apache.org/docs-2.0/platform/windows.html">Apache
+                Documentation</a></p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" style="margin-left: -.5in; margin-right: -27.0pt; margin-top: 0in"><b><a name="apache_error_log">error log</a></b></p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >This displays error in
+                the apache server. Useful for finding problems. If you have problems and
+                suspect Apache is the culprit, check here and look for potential
+                problems. This files' location is %InstallDir%\logs\error.log</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+              </blockquote>
+              <p class="MsoNormal">
+                <b><a name="apache_access_log">access log</a></b></p>
+              <blockquote>
+                <p class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >Can view the access
+                logs of apache. You can see exactly what apache is sending out, and
+                receiving. If you see suspicious activity you can get the IP address
+                here and investigate further, and possibly block the IP on your
+                firewall. This files' location is %InstallDir%\logs\access.log</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                </blockquote>
+              <p class="MsoNormal">
+                <b>
+                <a name="httpd.conf">httpd.conf</a></b></p>
+              <blockquote>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >This script allows
+                complete editing of the httpd.conf file. It controls EVERY aspect of the
+                Apache Web Server. Its not wise to edit this file without prior
+                knowledge of it's parameters. If you do edit this file, make a backup so
+                you can retrieve previous settings. And also add directives to the
+                bottom of the file, as there is not really a sequence to it. And comment
+                things clearly for later use. (Comments use # as the first character on
+                the line). Most problems apache encounters are bad config file. Check
+                here often, and understand it thoroughly.</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p class="MsoNormal" >&nbsp;</p>
+              </blockquote>
+              <p class="MsoNormal"><b>
+                <a name="SSI_Test">SSI Test</a></b></p>
+              <blockquote>
+                <p class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >Server Side Includes
+                (SSI). This will test to make sure SSI is working properly.</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p class="MsoNormal" >&nbsp;</p>
+              </blockquote>
+              <p class="MsoNormal">
+                <b>
+                <a name="apache_asp">ApacheASP</a></b></p>
+              <blockquote>
+                <p class="MsoNormal" >&nbsp;</p>
+                <p class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >This is apache's
+                version of ASP, note IT IS DIFFERENT FROM MICROSOFT ASP, and scripts
+                will probably require some heavy editing to work correctly. </p>
+                <p class="MsoNormal" >&nbsp;</p>
+                <p class="MsoNormal" >&nbsp;</p>
+              </blockquote>
+              <p class="MsoNormal"><a href="#Top">Top</a></p>
+              <p class="MsoNormal">&nbsp;</p>
+            </blockquote></TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+    <TABLE width="99%" border=0 cellPadding=0 cellSpacing=0 class=ttb>
+      <TBODY>
+        <TR>
+          <TD><IMG alt="" height=12 src="gfx/tb12_l.gif"
+      width=10></TD>
+          <TD class=tb12bkg><IMG alt="" height=12
+      src="gfx/spacer.gif" width=200></TD>
+          <TD><IMG alt="" height=12 src="gfx/tb12_r.gif"
+      width=10></TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+    <div align="center"><br>
+      <u><b><a name="MySql"></a></b></u>    </div>
+    <TABLE width="99%" border=0 cellPadding=0 cellSpacing=0 class=ttb>
+      <TBODY>
+        <TR>
+          <TD><IMG alt="" height=12 src="gfx/tt12_l.gif"
+      width=10></TD>
+          <TD class=tt12bkg><IMG alt="" height=12
+      src="gfx/spacer.gif" width=200></TD>
+          <TD><IMG alt="" height=12 src="gfx/tt12_r.gif"
+      width=10></TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+    <TABLE width="99%" border=0 cellPadding=10 cellSpacing=0 class=bodyline>
+      <TBODY>
+        <TR>
+          <TD width="995"><blockquote>
+              <p class="MsoNormal"><span style="font-size: 16pt"><b>MySql</a></b></span></p>
+              <p class="MsoNormal"><br>
+              <img src="gfx/img_mysql.gif" width="32" height="32">            </p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">You will notice 2
+                icons on either side of MySql,
+                <img src="gfx/img_mysql.gif" width="16" height="16" border="0" > and
+                <img src="gfx/ico_conf.gif" width="16" height="16" border="0" >. Click
+                the <img src="gfx/img_mysql.gif" width="16" height="16" border="0" > to
+                bring up <a href="#phpMyAdmin_info">phpMyAdmin</a>. And
+                <img src="gfx/ico_conf.gif" width="16" height="16" border="0" > to bring
+                up the Apache2Triad MySql Configuration.</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p class="MsoNormal">
+                <a href="#phpMyAdmin_info">phpMyAdmin</a> |
+                <a href="#Apache2Triad_MySql_Configuration">MySql configuration</a> |
+                <a href="#mysql_error_log_">error log</a> | <a href="#mysql_access_log">
+                access log</a> | <a href="#my.ini">my.ini </a>| <a href="#MySql_test">
+                MySql Test</a> | <a href="http://dev.mysql.com/doc/">MySql Manual</a></p>
+              <p class="MsoNormal">&nbsp;</p>
+              <blockquote>
+                <p class="MsoNormal" >&nbsp;</p>
+              </blockquote>
+              <p class="MsoNormal"><b>
+                <a name="Apache2Triad_MySql_Configuration">Apache2Triad MySql
+                Configuration</a></b></p>
+              <blockquote>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >Here you can change
+                most aspects of how MySql operates. You can choose to disable enable
+                Berkley DB and/or InnoDB.</p>
+                <p class="MsoNormal" >&nbsp;</p>
+                <p class="MsoNormal" >&nbsp;</p>
+                <p class="MsoNormal" >&nbsp;</p>
+                </blockquote>
+              <p class="MsoNormal"><b>
+                <a name="mysql_error_log_">error log</a></b></p>
+              <blockquote>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >Displays the MySql
+                error log, check here if you have problems with MySql. Default location
+                is %InstallDir%\MySql\logs\myerror.log</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                </blockquote>
+              <p class="MsoNormal"><b>
+                <a name="mysql_access_log">access log</a></b></p>
+              <blockquote>
+                <p class="MsoNormal" >&nbsp;</p>
+                <p class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >Displays access to
+                MySql. Default location is %InstallDir%\MySql\logs\myaccess.log</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+              </blockquote>
+              <p class="MsoNormal"><b><a name="my.ini">
+                my.ini</a></b></p>
+              <blockquote>
+                <p class="MsoNormal" >&nbsp;</p>
+                <p class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >This is the raw MySql
+                configuration file, it's highly recommended NOT to edit this file.
+                Controls all aspect of MySql. Default location is %Windir%\my.ini</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p class="MsoNormal" >&nbsp;</p>
+              </blockquote>
+              <p class="MsoNormal"><b>
+                <a name="MySql_test">MySql test</a></b></p>
+              <blockquote>
+                <p class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >Will test MySql
+                connection.</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+                <p align="left" class="MsoNormal" >&nbsp;</p>
+              </blockquote>
+              <p class="MsoNormal"><a href="#Top">Top</a></p>
+              <blockquote>
+                <p class="MsoNormal" >&nbsp;</p>
+              </blockquote>
+            </blockquote></TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+    <TABLE width="99%" border=0 cellPadding=0 cellSpacing=0 class=ttb>
+      <TBODY>
+        <TR>
+          <TD><IMG alt="" height=12 src="gfx/tb12_l.gif"
+      width=10></TD>
+          <TD class=tb12bkg><IMG alt="" height=12
+      src="gfx/spacer.gif" width=200></TD>
+          <TD><IMG alt="" height=12 src="gfx/tb12_r.gif"
+      width=10></TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+    <div align="center"><br>
+      <b><span style="font-size: 16pt"><a name="FAQ"></a></span></b>    </div>
+<TABLE width="99%" border=0 cellPadding=0 cellSpacing=0 class=ttb>
+      <TBODY>
+        <TR>
+          <TD><IMG alt="" height=12 src="gfx/tt12_l.gif"
+      width=10></TD>
+          <TD class=tt12bkg><IMG alt="" height=12
+      src="gfx/spacer.gif" width=200></TD>
+          <TD><IMG alt="" height=12 src="gfx/tt12_r.gif"
+      width=10></TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+    <TABLE width="99%" border=0 cellPadding=10 cellSpacing=0 class=bodyline>
+      <TBODY>
+        <TR>
+          <TD width="995"><blockquote>
+              <p align="left" class="MsoNormal"><b><span style="font-size: 16pt">FAQ</span></b></p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal"><a href="#Q1">How to get a domain name?</a> (also see
+                <a href="#NOTES">Notes</a>)</p>
+              <p align="left" class="MsoNormal"><a href="#Q2">How to get a DNS server?</a></p>
+              <p align="left" class="MsoNormal"><a href="#Q3">How to get a IP address?</a></p>
+              <p align="left" class="MsoNormal"><a href="#Q4">Why do I see the code of the script
+        instead of its output?</a></p>
+              <p align="left" class="MsoNormal"><a href="#Q5">Why can't I connect to my localhost from
+        outside my network or from the same network but from a different pc than the
+        one with apache2triad?</a></p>
+              <p align="left" class="MsoNormal"><a href="#Q6">Why does the mail server not send
+        emails , php-nuke , phpbb not email confirmations or they are
+        rejected/returned?</a></p>
+              <p align="left" class="MsoNormal"><a href="#Q7">Can you upgrade to the new
+        beta/alpha/candidate version of [program name] in Apache2Triad?</a></p>
+              <p align="left" class="MsoNormal"><a href="#Q8">Why do images and other files not load on
+        the pages served by apache?</a></p>
+              <p align="left" class="MsoNormal"><a href="#Q9">Can you
+                add this forum/cms/crm/helpdesk/banneradmin etc program in Apache2Triad?</a></p>
+              <p align="left" class="MsoNormal"><a href="#Q10">What is
+                the username/password for apache2cp/awstats/phpxmail etc? </a></p>
+              <p align="left" class="MsoNormal"><a href="#Q11">How can
+                I bypass the install check of a new version if i deleted my old version
+                without uninstalling it?</a></p>
+              <p align="left" class="MsoNormal"><a href="#Q12">How can
+                I definitely prevent the Xmail server form relaying?</a></p>
+              <p align="left" class="MsoNormal"><a href="#Q13">Why can
+                I not connect to my website from the internet? I have setup everything
+                on the local network correctly and everything works on the local
+                network. I have a static IP from my ISP and my DNS records are pointing
+                to my IP. What am I missing?</a> (<span class="name"><strong>Thanks
+                pcexhaust</strong></span> from A2T forums)</p>
+              <p align="left" class="MsoNormal"><a href="#Q14">How can
+                i redirect the root of my document root of my server to a directory
+                under it like phpbb? </a></p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal"><a name="Q1">Q1</a>: &quot;How to get a domain name?&quot;
+                <br>
+      <br>
+      A: To own one see the ICANN Accredited Registrars list from which you can
+        buy one, depending on your domain registrar they can also give you a DNS
+        server. <a href="http://www.networksolutions.com/">Network Solutions</a> is
+        one such registrar and so is no-ip.com and although this is free you only
+        get a sub domain (IE yourdomain.no-ip.com). TOOLS :
+                <a href="http://netcraft.com">Netcraft</a> for searching domain names,
+                <a href="http://www.whois.sc">Whois</a> for looking up domains. </p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal"><a name="Q2">Q2</a>: &quot;How to get a DNS server?&quot;
+                <br>
+      <br>
+      A:
+        In case you don't already know you have to configure your domain's dns
+        entries to point to the ip of the box you installed A2T on, if you don't
+        have a dns server you can get a free one from <a href="http://everydns.net">Everydns</a> , www.zoneedit.com or
+                <a href="http://www.dyndns.org">www.dyndns.org</a></p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">TOOLS :
+                <a href="http://www.dnsreport.com">DNSReport</a> for testing your
+        DNS configuration and <a href="http://www.dnsstuff.com">DNSStuff</a> for
+        more tools.</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal"><a name="Q3">Q3</a>: &quot;How to get a IP address?&quot;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">A: The easy way and most common is to have a ISP that assigned you a
+        external IP address depending on your internet provider they can also give
+        you a ip address. If you want more ip's like if you want to be a web hosting
+        provider see below.</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">IANA (Internet Assigned Numbers Authority) is the authority
+        that gestates Ip address allocation. You can see the list of registrars by
+        countries here: <a href="http://www.iana.org/cctld/cctld-whois.htm">IANA</a>
+                <br>
+      <br>
+      The authorities appointed by the IANA to allocate Ip numbers for specific
+        areas of the globe follow : <br>
+      USA <a href="http://www.arin.net/">ARIN</a><br>
+      EU
+                <a href="http://www.ripe.net/">RIPE</a> <br>
+      Asia &amp; Pacific
+                <a href="http://www.apnic.net/">APNIC</a> <br>
+      Latin America &amp; Caribbean
+                <a href="http://lacnic.net/">LACNIC</a><br>
+      <br>
+      These are RIRs (Regional Internet Registries) and they are the authorities
+        actually allocating IP (Internet Protocol) and AS (Autonomous System)
+        numbers. <br>
+      <br>
+      You need to find out the list of AS's in your country and request IP's from
+        them. <br>
+      <br>
+      TOOLS : <a href="http://www.robtex.com/netexp/">Robtex</a> for searching AS
+        and IP numbers and <a href="http://www.cidr-report.org">Cidr-report</a> for
+        a AS aggregation report</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal"><a name="Q4">Q4</a>: &quot;Why do I see the code of the script instead of its
+        output?&quot; <br>
+      <br>
+      A: Because you need to open the scripts through your apache server like this
+        : http://localhost/apache2cp/test.php, not
+                <a href="file:///c:/apache2/htdocs/apache2cp/test.php">c:\apache2\htdocs\apache2cp\test.php</a>
+                <br>
+      &nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal"><a name="Q5">Q5</a>: &quot;Why can't I connect to my localhost from outside my
+        network or from the same network but from a different pc than the one with
+        apache2triad ? &quot;<br>
+      &nbsp;</p>
+              <p align="left" class="MsoNormal">A: Because localhost is the hostname for 127.0.0.1 and they are both loop
+        back interfaces for the machine that you are on.You need to use the private
+        network IP or external public IP of the server or the hostnames associated
+        with them. <br>
+      <br>
+      TOOLS : <a href="http://whatismyhostname.com">What's My Host Name?</a> and
+                <a href="http://www.whatismyip.com">What's My IP?</a><br>
+      &nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal"><a name="Q6">Q6</a>: &quot;Why does the mail server not send emails , php-nuke ,
+        phpbb not email confirmations or they are rejected/returned?&quot;<br>
+      <br>
+      A: You must use the domain changing script to change from localhost to a
+        fully classified domain name. You must own the domain name to which you are
+        changing to and the DNS records for that domain must point to this
+        computer's IP. You must have proper Mx settings for that DNS , that point to
+        your mail server. Also, in some instances, you need to open up a localhost
+        relay on your mail server. See <a href="#Xmail_info">Xmail </a><br>
+      &nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal"><a name="Q7">Q7</a>: &quot;Can you upgrade to the new beta/alpha/candidate
+        version of [program name] in Apache2Triad?&quot; <br>
+      <br>
+      A: No , I only bundle stable releases of the software into Apache2Triad. You
+        can, if you feel you are experienced, just plug in upgrades. But be sure to
+        back up just in case!</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal"><a name="Q8">Q8</a>: &quot;Why do images and other files not load on the pages
+        served by apache?&quot;<br>
+      <br>
+      A: Set EnableSendfile to Off in httpd.conf to disable your os's broken
+        sendfile support.</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal"><a name="Q9">Q9</a>:
+                &quot;Can you add this forum/cms/crm/helpdesk/banneradmin etc program in
+                Apache2Triad?&quot;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">A:
+                <span class="postbody">No , Apache2Triad does not come anymore with
+                other web based scripts/software besides the ones which are web based
+                GUI's or other management programs for the software in Apache2Triad.</span></p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal"><a name="Q10">Q10</a>:
+                &quot;What is the username/password for apache2cp/awstats/phpxmail etc?&quot;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">A: Username: root //
+                Password: triadpass</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal"><a name="Q11">Q11</a>:
+                &quot;How can I bypass the install check of a new version if I deleted my old
+                version without uninstalling it?&quot;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">A:
+                <span class="postbody">Using a registry editor delete the key
+                HKEY_LOCAL_MACHINE\Software\Apache2Triad </span></p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal"><a name="Q12">Q12</a>:
+                &quot;How can I definitely prevent the Xmail server form relaying?&quot;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal"><a name="Q13">Q13</a>:
+                &quot;Why can I not connect to my website from the internet? I have setup
+                everything on the local network correctly and everything works on the
+                local network. I have a static IP from my ISP and my DNS records are
+                pointing to my IP. What am I missing?&quot;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">A:
+                <span class="postbody">Must likely you need to forward several ports to
+                your server. If your network sits behind a router, then you need to get
+                into the router's configuration, find a section on port forwarding
+                (maybe called DMZ) and forward the correct ports to your server. If you
+                only have one computer, and it is hosting your site, then you most
+                likely have a firewall up blocking the connection. ZoneAlarm is a
+                firewall, Symantec makes one and so to many others. Go into the firewall
+                settings and open the correct ports. A list of ports are listed in the
+                <a href="#NOTES">Notes</a>. </span></p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal"><a name="Q14">Q14</a>:
+                &quot;How can i redirect the root of my document root of my server to a
+                directory under it like phpbb?&quot;</p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">A: in the Document
+                Root of the web server create a index.html file with the containing this
+                : </p>
+              <p align="left" class="MsoNormal"><br>
+                &lt;meta http-equiv=&quot;refresh&quot; content=&quot;0&quot;;url=phpbb/&quot;&gt; </p>
+              <p align="left" class="MsoNormal"><br>
+                or a .htaccess file with either : <br>
+                &quot;Redirect 301 / /phpbb/&quot; </p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal">or </p>
+              <p align="left" class="MsoNormal"><br>
+                &quot;RewriteEngine on <br>
+                RewriteRule ^$ /phpbb/ &quot; </p>
+              <p align="left" class="MsoNormal">&nbsp;</p>
+              <p align="left" class="MsoNormal"><a name="NOTES">NOTES</a></p>
+              <p class="MsoNormal"  align="left">&nbsp;</p>
+              <p class="MsoNormal"  align="left">Code: <br>
+      <br>
+      http://abc.com is a url
+                <br>
+      http://abc.com/news/ is a url <br>
+      abc.com is a domain name <br>
+      www.abc.com is a sub domain of abc.com<br>
+      www.abc.com is a hostname
+                <br>
+      .com is a domain </p>
+              <p class="MsoNormal"  align="left">&nbsp;</p>
+              <p class="MsoNormal"  align="left">Ports:</p>
+              <p class="MsoNormal"  align="left">&nbsp;</p>
+              <p class="MsoNormal"  align="left">Web (http): 80&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                -Needed for websites (html, php, etc...) <br>
+      Web (https): 443&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -SSL
+                <br>
+      FTP: 20/21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                -File transfer protocol (sending and receiving files to/from server) <br>
+      SMTP: 25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                -Mail<br>
+      pop3:&nbsp; 110&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                -Mail </p>
+              <p class="MsoNormal"  align="left">&nbsp;</p>
+              <p class="MsoNormal" ><a href="#Top">Top</a></p>
+              <p class="MsoNormal" >&nbsp;</p>
+              </blockquote></TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+    <TABLE width="99%" border=0 cellPadding=0 cellSpacing=0 class=ttb>
+      <TBODY>
+        <TR>
+          <TD><IMG alt="" height=12 src="gfx/tb12_l.gif"
+      width=10></TD>
+          <TD class=tb12bkg><IMG alt="" height=12
+      src="gfx/spacer.gif" width=200></TD>
+          <TD><IMG alt="" height=12 src="gfx/tb12_r.gif"
+      width=10></TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+    <div align="center"><b><span style="font-size:16.0pt"><br>
+        <a name="Additional" id="Additional"></a></span></b><br>
+        
+      <div align="center">
+<TABLE width="99%" border=0 cellPadding=0 cellSpacing=0 class=ttb>
+          <TBODY>
+            <TR>
+              <TD><IMG alt="" height=12 src="gfx/tt12_l.gif"
+      width=10></TD>
+              <TD class=tt12bkg><IMG alt="" height=12
+      src="gfx/spacer.gif" width=200></TD>
+              <TD><IMG alt="" height=12 src="gfx/tt12_r.gif"
+      width=10></TD>
+            </TR>
+          </TBODY>
+        </TABLE>
+        <TABLE width="99%" border=0 cellPadding=10 cellSpacing=0 class=bodyline>
+          <TBODY>
+            <TR>
+              <TD width="995"><p class="MsoNormal"  align="left"><b><span style="font-size:16.0pt">Additional Information</span></b></p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">
+                <a href="#Apache_Info">Apache</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#ApacheMonitor_info">ApacheMonitor</a> |
+                <a href="#OpenSSL_info">OpenSSL</a> </p>
+                <p class="MsoNormal"  align="left">
+                <a href="#Apache_Add-ons">Apache Add-ons</a>&nbsp;&nbsp;&nbsp;
+                <a href="#php_info">PHP</a> | <a href="#MySql_info">MySql</a> |
+                <a href="#Xmail_info">Xmail</a> | <a href="#Slimftpd_info">SlimFTPd</a></p>
+                <p class="MsoNormal"  align="left"><a href="#Scripts">
+                Scripts</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#phpxmail_info">phpxmail</a> | <a href="#AWStats_info">AWStats
+                </a>| phpMyAdmin</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left"><b><i><u>
+                <a name="Apache_Info">Apache</a></u></i></b></p>
+                <p class="MsoNormal"  align="left"><a style="color: blue; text-decoration: underline; " href="http://www.apache.org/">http://www.apache.org</a></p>
+                <p class="MsoNormal"  align="left">
+                <a style="color: blue; text-decoration: underline; " href="http://httpd.apache.org/docs-2.0/platform/windows.html">http://httpd.apache.org/docs-2.0/platform/windows.html</a></p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">Defaults:</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">Doc Root&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : %InstallDir%\htdocs</p>
+                <p class="MsoNormal"  align="left">Port&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : 80</p>
+                <p class="MsoNormal"  align="left">Server Name&nbsp;&nbsp;&nbsp; : localhost</p>
+                <p class="MsoNormal"  align="left">Server Email&nbsp;&nbsp;&nbsp;&nbsp; :
+                <a href="mailto:admin@localhost">admin@localhost</a></p>
+                <p class="MsoNormal"  align="left">Server Sig&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : On (need to change for
+                production, or live server)</p>
+                <p class="MsoNormal"  align="left">Server Status&nbsp;&nbsp;&nbsp; : On (need to change for
+                production, or live server)</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left"><i>
+                <a name="ApacheMonitor_info">ApacheMonitor </a></i></p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">No Defaults, Windows Binary File</p>
+                <p class="MsoNormal"  align="left">DefaultLocation: %InstallDir%\bin</p>
+                <p class="MsoNormal"  align="left">No documentation</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left"><i>
+                <a name="OpenSSL_info">OpenSSL
+                </a></i></p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">These OpenSSL binaries were built for distribution
+                from the U.S. without support for the patented encryption methods IDEA,
+                MDC-2 or RC5.</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">Usage:</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">DefaultLocation: %InstallDir%\opssl\bin</p>
+                <p class="MsoNormal"  align="left">Documentation:
+                <a style="color: blue; text-decoration: underline; " href="http://www.openssl.org/docs/">http://www.openssl.org/docs/</a></p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">To make certificates:</p>
+                <p class="MsoNormal"  align="left">OpenSSL genrsa -out privkey.pem 2048</p>
+                <p class="MsoNormal"  align="left">openssl req -new -x509 -key privkey.pem -out
+                certificate.crt -days 1095 -config
+                <a href="file:///C:/apache2triad/opssl/bin/openssl.cnf">C:\apache2triad\opssl\bin\openssl.cnf</a></p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">To test certificates:</p>
+                <p class="MsoNormal"  align="left">openssl asn1parse -in certificate.crt -inform pem</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">To read certificates:</p>
+                <p class="MsoNormal"  align="left">openssl crl -noout -text -in &lt;name&gt;.crl</p>
+                <p class="MsoNormal"  align="left">openssl x509 -noout -text -in &lt;name&gt;.crt</p>
+                <p class="MsoNormal"  align="left">openssl req -noout -text -in &lt;name&gt;.csr</p>
+                <p class="MsoNormal"  align="left">openssl rsa -noout -text -in &lt;name&gt;.key</p>
+                <p class="MsoNormal"  align="left">openssl dsaparam -noout -text -in &lt;name&gt;.prm</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">To install certificates:</p>
+                <p class="MsoNormal"  align="left">Replace /cert/privkey.pem and /cert/certificate.crt
+                with your new ones</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">Besides the files in this folder it uses:
+                &nbsp;%InstallDir%\opssl\conf\ssl.conf</p>
+                <p class="MsoNormal"  align="left">Configuration file is at:
+                %InstallDir%\opssl\bin\openssl.cnf </p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left"><b><i><u>
+                <a name="Apache_Add-ons">Apache Add-ons</a></u></i></b></p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left"><i><a name="php_info">php </a></i></p>
+                <p class="MsoNormal"  align="left">
+                <a style="color: blue; text-decoration: underline; " href="http://www.php.net/">http://www.php.net/</a></p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">Default Location: %InstallDir%\php</p>
+                <p class="MsoNormal"  align="left">Documentation:
+                <a style="color: blue; text-decoration: underline; " href="http://www.php.net/docs.php">http://www.php.net/docs.php</a></p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">
+      Configuration file is :<br>
+      %windir%/php.ini</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left"><i>
+                <a name="MySql_info">MySql</a></i></p>
+                <p class="MsoNormal"  align="left">
+                <a href="http://www.mysql.com/">http://www.mysql.com/</a></p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">Default Location: %InstallDir%\MySql</p>
+                <p class="MsoNormal"  align="left">Documentation:
+                <a href="http://dev.mysql.com/doc/">http://dev.mysql.com/doc/</a></p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">
+      Besides the files in this folder it uses:<br>
+      %windir%/odbc.ini<br>
+      %windir%/my.ini<br>
+                <br>
+      Configuration file is :<br>
+      %windir%/my.ini<br>
+      <br>
+      
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left"><i>
+                <a name="Xmail_info">Xmail</a></i></p>
+                <p class="MsoNormal"  align="left">
+                <a style="color: blue; text-decoration: underline; " href="http://xmailserver.org/">http://xmailserver.org/</a></p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">Default Location: %InstallDir%\mail</p>
+                <p class="MsoNormal"  align="left">Documentation %InstallDir%\mail\manual\readme.html</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">Usage: do read ALL the Xmail manual</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">Tab files format is: &quot;&quot;tab&quot;&quot; &lt;carriage return&gt;</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">Apache2triad Xmail comes with a default
+                admin@localhost working account and a localhost domain. Default password
+                is triadpass... It is found encrypted in the files generally in the
+                second row after username. If you use the change domain script, these
+                files will be updated accordingly, same for the admin mailbox.</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">Xmail administration accounts are in file
+                ctrlaccounts.tab</p>
+                <p class="MsoNormal"  align="left">Allowed administration ip’s are in ctrl.ipmap.tab</p>
+                <p class="MsoNormal"  align="left">Administration logins
+                are made to the 'controller server' that runs with Xmail and waits for
+                TCP/IP connections on port 6017</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">All domains must have line in domains.tab and dir
+                under domains\ with its name. All users must have line in mailusers.tab
+                and dir domains\domainaname\... </p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">To make password for mailusers.tab do &quot;xmcrypt
+                password &gt; tempfile.txt&quot; and paste the contents of tempfile.txt in the
+                password space in mailusers.tab</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">The relay access is restricted in smtprelay.tab<br>
+                  To enable it for your host see the Xmail manual</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">Configuration file is: %InstallDir%\mail\server.tab</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">You can configure all of Xmail by accessing
+                <a style="color: blue; text-decoration: underline; " href="http://localhost/phpxmail/">http://localhost/phpxmail/</a>. Please understand phpxmail uses user
+                <i>root</i> and pass <b><i>NOT </i></b>admin, admin is just a mailbox for
+                Xmail and has nothing to do with phpxmail. You typically will add/delete
+                users from phpxmail as it makes it much easier. </p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left"><b><i>YOU MUST READ AND UNDERSTAND&nbsp; ABOUT&nbsp;
+        THE XMAIL SERVER, AS IT CAN BE ABUSED BY SPAMMERS RESULTING IN BLACKLISTING
+                OF YOUR SERVER.</i></b></p>                <p class="MsoNormal"  align="left">&nbsp;</p>
+
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left"><i>
+                <a name="Slimftpd_info">Slimftpd</a> </i></p>
+                <p class="MsoNormal"  align="left">
+                <a href="http://www.whitsoftdev.com/slimftpd/">http://www.whitsoftdev.com/slimftpd/</a></p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">SlimFTPd is a fully multi-threaded standards-compliant FTP server that runs
+        as a system service on Windows 98/ME or Windows NT/2K/XP. Once started,
+                SlimFTPd runs quietly in the background. It reads its configuration from
+                a config file in the same folder as the executable, and it outputs all
+                activity to a log file in the same place.
+        Its virtual file system allows you to mount any local drive or path to any
+        virtual path on the server.&lt;/Char_Desc_450&gt;<br>
+      <br>
+      SlimFTPd is a fully standards-compliant FTP server implementation with an
+        advanced virtual file system. It is extremely small, but don't let its file
+        size deceive you: SlimFTPd packs a lot of bang for the kilobyte. It is
+        written in pure Win32 C++ with no external dependencies and no messy
+        installer. SlimFTPd is a fully multi-threaded application that runs as a
+        system service on Windows 98/ME or Windows NT/2K/XP, and it comes with a
+        tool to simplify its installation or un-installation as a system service.
+        Once the service is started, SlimFTPd runs quietly in the background. <br>
+                <br>
+      It reads its configuration from a config file in the same folder as the
+        executable, and it outputs all activity to a log file in the same place. The
+        virtual file system allows you to mount any local drive or path to any
+        virtual path on the server. <br>
+      <br>
+      This allows you to have multiple local drives represented on the server's
+        virtual file system or just different folders from the same drive. SlimFTPd
+        allows you to set individual permissions for server paths. Open
+        slimftpd.conf in your favorite text editor to set up SlimFTPd's
+        configuration. The format of SlimFTPd's config file is similar to Apache Web
+        Server's for those familiar with Apache. Supports passive mode transfers and
+        allows resume of failed transfers. <br>
+      <br>
+      Small memory footprint; won't hog system resources. Easy configuration of
+        server options through configuration file. All activity logged to file.
+        Support for binding to a specific interface in multihomed environments. User
+        definable timeouts. No installation routine; won't take over your system.
+        Executable is tiny! <br>
+      <br>
+      Supports all standard FTP commands: ABOR, APPE, CDUP/XCUP, CWD/XCWD, DELE,
+        HELP, LIST, MKD/XMKD, NOOP, PASS, PASV, PORT, PWD/XPWD, QUIT, REIN, RETR,
+        RMD/XRMD, RNFR/RNTO, STAT, STOR, SYST, TYPE, USER. Supports these extended
+        FTP commands: MDTM, NLST, REST, SIZE. Supports setting of file timestamps.
+        Conforms to RFC 959 and RFC 1123 standards.</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left"><b><i><u>
+                <a name="Scripts">Scripts</a></u></i></b></p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left"><i>
+                <a name="phpxmail_info">phpxmail</a></i></p>
+                <p class="MsoNormal"  align="left">
+                <a style="color: blue; text-decoration: underline; " href="http://phpxmail.sourceforge.net/">http://phpxmail.sourceforge.net/</a></p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">DefaultLocation:
+                <a style="color: blue; text-decoration: underline; " href="http://localhost/phpxmail">http://localhost/phpxmail</a></p>
+                <p class="MsoNormal"  align="left">Documentation: None Yet</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">Usage: This is an Xmail server script to add/delete users,
+                change domains, ect. Just open this directory in your browser. You can configure all of Xmail by accessing
+                <a style="color: blue; text-decoration: underline; " href="http://localhost/phpxmail/">http://localhost/phpxmail/</a>. Please understand phpxmail uses user
+                <i>root</i> and pass <b><i>NOT </i></b>admin, admin is just a mailbox for
+                Xmail and has nothing to do with phpxmail. You typically will add/delete
+                users from phpxmail as it makes it much easier.</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">Configuration file is:
+                %DocRoot%\phpxmail\config.php </p>                <p class="MsoNormal"  align="left">&nbsp;</p>
+
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left"><i>
+                <a name="AWStats_info">AWStats</a></i></p>
+                <p class="MsoNormal"  align="left">
+                <a style="color: blue; text-decoration: underline; " href="http://awstats.sourceforge.net/">http://awstats.sourceforge.net/</a></p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">Default Location: %DocRoot%\AWStats</p>
+                <p class="MsoNormal"  align="left">Documentation:
+                <a style="color: blue; text-decoration: underline; " href="http://localhost/awstats/docs/index.html">http://localhost/awstats/docs/index.html</a></p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">Usage: Create and configure: awstats.yourhost.conf
+                (yourhost=www.domain.com; domain.com you need to create for each one you
+                plan on accessing from). To update click the text named <i>Update Now</i> in
+                the upper top section.</p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">Configuration file is:
+                %DocRoot%/awstats/awstats.yourhost.conf </p>                <p class="MsoNormal"  align="left">&nbsp;</p>
+
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left"><i>
+                <a name="phpMyAdmin_info">phpMyAdmin</a></i></p>
+                <p class="MsoNormal"  align="left">
+                <a href="http://www.phpmyadmin.net/home_page/">
+                http://www.phpmyadmin.net/home_page/</a></p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left">Default Location:
+                %DocRoot%\phpMyAdmin</p>
+                <p class="MsoNormal"  align="left">Documentation:
+                <a href="http://localhost/phpmyadmin/documentation.html">
+                http://localhost/phpmyadmin/documentation.html</a></p>
+                <p class="MsoNormal"  align="left">
+                <br>
+                Usage:<br>
+                Just open this directory in your browser.<br>
+                <br>
+                Configuartion file is :<br>
+                config.inc.php </p>
+                <p class="MsoNormal"  align="left">&nbsp;</p>
+                <p class="MsoNormal"  align="left"><a href="#Top">Top</a></p> </TD>
+            </TR>
+          </TBODY>
+        </TABLE>
+        <TABLE width="99%" border=0 cellPadding=0 cellSpacing=0 class=ttb>
+          <TBODY>
+            <TR>
+              <TD><IMG alt="" height=12 src="gfx/tb12_l.gif"
+      width=10></TD>
+              <TD class=tb12bkg><IMG alt="" height=12
+      src="gfx/spacer.gif" width=200></TD>
+              <TD><IMG alt="" height=12 src="gfx/tb12_r.gif"
+      width=10></TD>
+            </TR>
+          </TBODY>
+        </TABLE>
+        <br>
+        <a name="LEGEND" id="LEGEND"></a><br>
+        <TABLE width="99%" border=0 cellPadding=0 cellSpacing=0 class=ttb>
+          <TBODY>
+            <TR>
+              <TD><IMG alt="" height=12 src="gfx/tt12_l.gif"
+      width=10></TD>
+              <TD class=tt12bkg><IMG alt="" height=12
+      src="gfx/spacer.gif" width=200></TD>
+              <TD><IMG alt="" height=12 src="gfx/tt12_r.gif"
+      width=10></TD>
+            </TR>
+          </TBODY>
+        </TABLE>
+        <TABLE width="99%" border=0 cellPadding=10 cellSpacing=0 class=bodyline>
+          <TBODY>
+            <TR>
+              <TD width="995"><p class="MsoNormal"  align="left"><span style="font-size: 16pt"><b>ICON LEGEND</b></span><br>
+              </p>
+                <blockquote>
+                  <p align="left" class="MsoNormal">
+      <img src="gfx/ico_info.gif" width="16" height="16"> <b>Info</b></p>
+                  <p align="left" class="MsoNormal"><img src="gfx/ico_manual.gif" width="16" height="16"> <b>Manual</b></p>
+                  <p align="left" class="MsoNormal"><img src="gfx/ico_test.gif" width="16" height="16"> <b>Test </b></p>
+                  <p align="left" class="MsoNormal"><i><img src="gfx/ico_view.gif" width="16" height="16"> </i><b>Details<br>
+                <img src="gfx/ico_help.gif" width="16" height="16">                Help</b></p>
+                  <p align="left" class="MsoNormal"><img src="gfx/ico_conf.gif" width="16" height="16"> <b>Configuration (graphicall)</b></p>
+                  <p align="left" class="MsoNormal"><img src="gfx/ico_edit.gif" width="16" height="16"> <b>Configuration (textonly)</b></p>
+                  <p align="left" class="MsoNormal"><b>
+      </b></p>
+                  <p align="left" class="MsoNormal"><i><img src="gfx/ico_warn.gif" width="16" height="16"></i> <b>Warning</b></p>
+                  <p align="left" class="MsoNormal"><i><img src="gfx/ico_notice.gif" width="16" height="16"> </i><b>Notice</b><i> <br>
+      <img src="gfx/ico_yes.gif" width="16" height="16"> </i><b>OK</b></p>
+                  <p align="left" class="MsoNormal"><b><br>
+                  </b></p>
+                </blockquote>
+                <p class="MsoNormal"><a href="#Top">Top</a></p>
+                <blockquote>
+                  <p class="MsoNormal" ><b>                  </b></p>
+                </blockquote></TD>
+            </TR>
+          </TBODY>
+        </TABLE>
+        <TABLE width="99%" border=0 cellPadding=0 cellSpacing=0 class=ttb>
+          <TBODY>
+            <TR>
+              <TD><IMG alt="" height=12 src="gfx/tb12_l.gif"
+      width=10></TD>
+              <TD class=tb12bkg><IMG alt="" height=12
+      src="gfx/spacer.gif" width=200></TD>
+              <TD><IMG alt="" height=12 src="gfx/tb12_r.gif"
+      width=10></TD>
+            </TR>
+          </TBODY>
+        </TABLE>
+        <div align="center"><b><span style="font-size:16.0pt"></span></b></div>
+    <div align="center">
+</div>
+      </div>
+    </div>
+    <p><font color="#999999" size="1" face="Verdana, Arial, Helvetica, sans-serif">Page Contribuited by Andy Carmony<br>
+    Apache2TriadCP by <a href="http://alexamancini.com" target="_blank">Vlad Alexa Mancini</a><br>
+   
+Programming by <a href="http://nextcode.org">NextCode</a> 
+Graphics by <a href="http://nextdesign.eu.org">NextDesign</a> <br>
+      <br>
+            </font></p>
+  </div>
+</div>
+</body>
+</html>

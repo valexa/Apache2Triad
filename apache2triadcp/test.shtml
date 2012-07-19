@@ -1,0 +1,167 @@
+<html>
+<link rel=stylesheet href=style.css>
+<center>
+<span class=span0><span class=span1>
+
+<b>
+<!--#set var="msg" value="SSI is working fine" -->
+<!--#echo var="msg" -->
+</b>
+
+<br><br>
+<b>server software : </b><!--#echo var="SERVER_SOFTWARE" -->
+<br><br>
+<b>client software : </b><!--#echo var="HTTP_USER_AGENT" -->
+<br><br>
+<b>http referer : </b><!--#echo var="HTTP_REFERER" -->
+<br><br>
+<b>opened file : </b><!--#echo var="SCRIPT_FILENAME" -->
+<br><br>
+<b>server adress :</b><!--#echo var="HTTP_HOST" -->
+<br><br>
+<b>your adress : </b><!--#echo var="REMOTE_ADDR" -->
+</span></span>
+<br>
+
+<table width=88% class=table border=0 cellpadding=4 cellspacing=1>
+<tr><td class=tdark ><b>Server Variable</b></td><td class=tdg ><b>Value</b></td></tr>
+    <tr> 
+      <td class=tdd><font size=-1>HTTP_ACCEPT</font></td>
+      <td class=tdl><font size=-1><!--#echo var="HTTP_ACCEPT" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>HTTP_REFERER</font></td>
+      <td class=tdl><font size=-1><!--#echo var="HTTP_REFERER" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>HTTP_ACCEPT_LANGUAGE</font></td>
+      <td class=tdl><font size=-1><!--#echo var="HTTP_ACCEPT_LANGUAGE" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>HTTP_ACCEPT_ENCODING</font></td>
+      <td class=tdl><font size=-1><!--#echo var="HTTP_ACCEPT_ENCODING" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>HTTP_USER_AGENT</font></td>
+      <td class=tdl><font size=-1><!--#echo var="HTTP_USER_AGENT" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>HTTP_HOST</font></td>
+      <td class=tdl><font size=-1><!--#echo var="HTTP_HOST" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>HTTP_CONNECTION</font></td>
+      <td class=tdl><font size=-1><!--#echo var="HTTP_CONNECTION" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>PATH</font></td>
+      <td class=tdl><font size=-1><!--#echo var="PATH" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>COMSPEC</font></td>
+      <td class=tdl><font size=-1><!--#echo var="COMSPEC" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>WINDIR</font></td>
+      <td class=tdl><font size=-1><!--#echo var="WINDIR" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>SERVER_SIGNATURE</font></td>
+      <td class=tdl><font size=-1><!--#echo var="SERVER_SIGNATURE" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>SERVER_SOFTWARE</font></td>
+      <td class=tdl><font size=-1><!--#echo var="SERVER_SOFTWARE" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>SERVER_NAME</font></td>
+      <td class=tdl><font size=-1><!--#echo var="SERVER_NAME" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>SERVER_ADDR</font></td>
+      <td class=tdl><font size=-1><!--#echo var="SERVER_ADDR" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>SERVER_PORT</font></td>
+      <td class=tdl><font size=-1><!--#echo var="SERVER_PORT" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>REMOTE_ADDR</font></td>
+      <td class=tdl><font size=-1><!--#echo var="REMOTE_ADDR" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>DOCUMENT_ROOT</font></td>
+      <td class=tdl><font size=-1><!--#echo var="DOCUMENT_ROOT" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>SERVER_ADMIN</font></td>
+      <td class=tdl><font size=-1><!--#echo var="SERVER_ADMIN" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>SCRIPT_FILENAME</font></td>
+      <td class=tdl><font size=-1><!--#echo var="SCRIPT_FILENAME" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>REMOTE_PORT</font></td>
+      <td class=tdl><font size=-1><!--#echo var="REMOTE_PORT" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>REMOTE_USER</font></td>
+      <td class=tdl><font size=-1><!--#echo var="REMOTE_USER" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>AUTH_TYPE</font></td>
+      <td class=tdl><font size=-1><!--#echo var="AUTH_TYPE" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>GATEWAY_INTERFACE</font></td>
+      <td class=tdl><font size=-1><!--#echo var="GATEWAY_INTERFACE" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>SERVER_PROTOCOL</font></td>
+      <td class=tdl><font size=-1><!--#echo var="SERVER_PROTOCOL" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>REQUEST_METHOD</font></td>
+      <td class=tdl><font size=-1><!--#echo var="REQUEST_METHOD" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>QUERY_STRING</font></td>
+      <td class=tdl><font size=-1><!--#echo var="QUERY_STRING" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>REQUEST_URI</font></td>
+      <td class=tdl><font size=-1><!--#echo var="REQUEST_URI" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>SCRIPT_NAME</font></td>
+      <td class=tdl><font size=-1><!--#echo var="SCRIPT_NAME" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>DATE_LOCAL</font></td>
+      <td class=tdl><font size=-1><!--#echo var="DATE_LOCAL" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>DATE_GMT</font></td>
+      <td class=tdl><font size=-1><!--#echo var="DATE_GMT" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>LAST_MODIFIED</font></td>
+      <td class=tdl><font size=-1><!--#echo var="LAST_MODIFIED" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>DOCUMENT_URI</font></td>
+      <td class=tdl><font size=-1><!--#echo var="DOCUMENT_URI" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>USER_NAME</font></td>
+      <td class=tdl><font size=-1><!--#echo var="USER_NAME" -->&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td class=tdd><font size=-1>DOCUMENT_NAME</font></td>
+      <td class=tdl><font size=-1><!--#echo var="DOCUMENT_NAME" -->&nbsp;</font></td>
+    </tr>
+  </table>
+<br>
+</center>Written by Vlad Alexa Mancini</html>
+

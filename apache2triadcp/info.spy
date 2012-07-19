@@ -1,0 +1,109 @@
+[[.import name=transform]]
+[[ 
+  import string, os, time, sys, spyce, spyceConfig
+  showDict = [[spy dict:
+  <table border=0 cellspacing=0 cellpadding=0>
+  [[ 
+    keys = dict.keys()
+    keys.sort()
+    for i in keys: { ]]
+    <tr>
+      <td align=right valign=top nowrap><b>[[=i]]</b></td>
+      <td width=10 align=center valign=top>-</td>
+      <td>[[=dict[i] ]]</td>
+    </tr>
+  [[ } ]]
+  [[ if not dict: { ]]
+    None
+  [[ } ]]
+  </table>
+]] ]]
+
+<html>
+<head>
+  <title>Spyce Runtime Information</title>
+</head>
+<body bgcolor=#e9dac6>
+
+<h1>Spyce Runtime Information</h1><br>
+
+  <h2>Version Information</h2>
+  [[ showDict({
+    'spyce': spyce.__version__,
+    'python': sys.version,
+    'header': spyce.getServer().spyceHeader,
+    'mode': spyce.getServer().entry,
+  }) ]] <hr>
+
+  <h2>Request</h2>
+  [[ showDict( {
+    'file': request.filename(),
+    'uri': request.uri(),
+    'method': string.lower(request.method()),
+    'time': time.asctime(time.localtime(time.time())),
+  }) ]] <hr>
+  <h2>Request [[=request.method()]]</h2> [[ 
+    if request.method()=='GET': showDict(request.get1())
+    else: showDict(request.post1())
+  ]] <hr>
+  <h2>Request Headers</h2> [[ showDict(request.getHeader()) ]] <hr>
+  <h2>Request Modules</h2> [[
+    moddict = {}
+    for mod in request._api.getModules().keys(): {
+      moddict[mod] = transform.html_encode(str(request._api.getModule(mod)))
+    }
+    showDict(moddict)
+  ]] <hr>
+  <h2>Request Tags</h2>
+  [[\
+    has_taglib = 1
+    try:
+      taglib
+    except:
+      has_taglib = 0
+    if has_taglib:
+      taglibs = map(
+        lambda lib, libs=taglib.taglibs, spyce=spyce: '%s as %s' % (
+          str(libs[lib].__class__)[len(spyce.SPYCE_LOADER)+1:], 
+          lib), 
+        taglib.taglibs.keys())
+      context = filter(
+        lambda x, modules=request._api.getModules(): not modules.has_key(x),
+        taglib.context.keys())
+      context = map(
+        lambda var, tagcontext=taglib.context, transform=transform: '%s = %s' % (
+          str(var), transform.html_encode(tagcontext[var])),
+        context)
+      showDict( {
+        'taglibs': string.join(taglibs, ', '),
+        'context': string.join(context, '<br>\n'),
+      }) 
+    else:
+      print 'no tag libraries'
+  ]] <hr>
+  <h2>Server</h2>
+  [[\ 
+    try:
+      concurrency = {
+        SPYCE_CONCURRENCY_SINGLE: 'single',
+        SPYCE_CONCURRENCY_FORK: 'fork',
+        SPYCE_CONCURRENCY_THREAD: 'thread',
+      }[spyce.getServer().concurrency]
+    except: concurrency = 'single'
+    try: sys.argv
+    except: sys.argv = []
+    showDict({
+      'curdir': os.getcwd(),
+      'parallelism': concurrency,
+      'id': request._api.getServerID(),
+      'home': spyceConfig.SPYCE_HOME,
+      'spyce.path': string.join(spyce.getServer().path, '; '),
+      'sys.path': string.join(filter(None, sys.path), '; '),
+      'sys.argv': string.join(sys.argv, ' '),
+      'imports': string.join(spyce.getServer().imports, ', '),
+    }) 
+  ]] <hr>
+  <h2>Server Globals</h2> [[ showDict(request._api.getServerGlobals()) ]] <hr>
+  <h2>Server Environment</h2> [[ showDict(request.env()) ]] <hr>
+
+</body></html>

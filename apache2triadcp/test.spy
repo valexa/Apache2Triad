@@ -1,0 +1,42 @@
+<html>
+<link rel=stylesheet href=style.css>
+<center>
+<span class=span0><span class=span1>
+
+<b>[[print 'Python Spyce is working fine',]]</b>
+
+<br><br>
+<b>server software : </b>[[ print request.env('SERVER_SOFTWARE') ]]
+<br><br>
+<b>client software : </b>[[ print request.env('HTTP_USER_AGENT') ]]
+<br><br>
+<b>http referer : </b>[[ print request.env('HTTP_REFERER') ]]
+<br><br>
+<b>opened file : </b>[[ print request.env('SCRIPT_FILENAME') ]]
+<br><br>
+<b>server adress :</b>[[ print request.env('HTTP_HOST') ]]
+<br><br>
+<b>your adress : </b>[[ print request.env('REMOTE_ADDR') ]]
+</span></span>
+<br>
+
+<table width=88% class=table border=0 cellpadding=4 cellspacing=1>
+<tr><td class=tdark ><b>Server Variable</b></td><td class=tdg ><b>Value</b></td></tr>
+
+[[ showDict = [[spy dict:
+[[ keys = dict.keys()
+   keys.sort()
+   for i in keys: { ]]
+
+<tr><td class=tdd><font size=-1>[[=i]]</font></td>
+<td class=tdl><font size=-1>[[=dict[i] ]]&nbsp;</font></td></tr>
+
+[[ } ]]
+[[ if not dict: { ]] None [[ } ]]
+]] ]]
+ [[ showDict(request.env()) ]]
+
+</table></p></font>
+
+
+</center>Written by Vlad Alexa Mancini</html>

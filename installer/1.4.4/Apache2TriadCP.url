@@ -1,0 +1,8 @@
+[DEFAULT]
+BASEURL=http://localhost/apache2triadcp/
+
+[InternetShortcut]
+URL=http://localhost/apache2triadcp/
+Modified=A042B9D2D253C30156
+IconFile=%APACHE2TRIAD_DIR%\htdocs\apache2triadcp\favicon.ico
+IconIndex=0
